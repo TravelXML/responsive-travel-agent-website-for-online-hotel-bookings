@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Welcome to ClearTripClone</title>
+      <link rel="shortcut icon" type="image/x-icon" href="assets/images/inner/favicon.png" />
+      <link rel="stylesheet" type="text/css" href="calenplugin/css/daterangepicker.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+      <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <!--start Header-->
+      <header id="header">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <a href="index.html" class="navbar-brand font-weight-bold wow fadeInDown">
+                  <h2>
+                     Travel Agents
+                     <!--<img src="" class="img-logo img-fluid" alt="logo"/>-->
+                  </h2>
+               </a>
+               <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsenavbar">
+               <i class="fa fa-align-justify"></i>
+               </button>
+               <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+                  <ul class="navbar-nav ml-auto ">
+                     <li class="nav-item dropdown nav-left">
+                        <div class="wow fadeInDown nav-img" data-wow-delay="70ms">
+                           <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                           <img src="assets/images/inner/flag.png" alt="currency">
+                           </a>
+                           <div class="dropdown-menu">
+                              <a class="dropdown-item" href="">UAE</a>
+                              <a class="dropdown-item" href="">OMAN</a>
+                              <a class="dropdown-item" href="">QATAR</a>
+                              <a class="dropdown-item" href="">Bahrain</a>
+                              <a class="dropdown-item" href="">Kuwait</a>
+                              <a class="dropdown-item" href="">Saudi Arabia</a>
+                              <a class="dropdown-item" href="">Middle East</a>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown nav-left">
+                        <div class="wow fadeInDown nav-img trip" data-wow-delay="70ms">
+                           <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                           <img src="assets/images/inner/user.png" alt="currency">Your Trips
+                           </a>
+                           <div class="dropdown-menu">
+                              <a href="" class="btn-register" data-toggle="modal" data-target="#myModal1">Sign In</a>
+                              <br>
+                              <a href="" class="btn-register" data-toggle="modal" data-target="#myModal">Now Here ? Register</a>
+                              <a class="dropdown-item" href="cancellation.html">Cancellations</a>
+                              <a class="dropdown-item" href="change-flight.html">Change Flights</a>
+                              <a class="dropdown-item" href="">Check PNR Status</a>
+                              <a class="dropdown-item" href="">Print ticket</a>
+                              <a class="dropdown-item" href="">Print hotel Voucher</a>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <div class="clearfix"></div>
+      </header>
+      <div class="container pt-4 activityInner">
+         <h2 class="pt-4">Explore all activities</h2>
+         <p>Here’s a pool of all the activities that you can find in the city</p>
+         <div class="row">
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/wonderla.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Wonderla Amusement Park</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,089</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/act.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Chairman's Jade Resort</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,400</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/act2.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Foodies Evening in Johnson</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,500</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/act3.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Basavanagudi Walk - 3 Hours</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,500</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container pt-4 activityInner">
+         <div class="row">
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/tipu.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Tipu Sultan Heritage Walk</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹2,500</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/garden.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>The Garden Asia Resort</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹999</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/fort.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Ramanashree California Resort</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,089</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/ramee.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Ramee Guestline Resort</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹905</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container pt-4 activityInner">
+         <div class="row">
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/flying.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Microlight Flying - 10 Minutes</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹3,500</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/park.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Park Hotels and Resorts</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,060</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/winley.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Winery Tour with Wine Tasting</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹767</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/snacks.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Evening Snacks at Chamarajpet</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,500</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container pt-4 activityInner">
+         <div class="row">
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/classic.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>La Classic Resort</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹919</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/vana.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Vana Resorts</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹944</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/guhanta.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Guhantara Resort</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,176</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/retreat.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>RD's Nature Retreat</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,157</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container pt-4 activityInner">
+         <div class="row">
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/fun.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Fun World</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹725</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/urban.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Urban Valley</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,000</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/kanva.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Kanva Star Resort</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,000</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/snow.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Snow City</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹450</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container pt-4 activityInner">
+         <div class="row">
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/car.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Kempegowda Airport to Bangalore</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,499</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/cycle.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Cycling and Kayaking</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,650</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/kinvab.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Kinvah Vineyard Tour by Shashidhar</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,500</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/club.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Country Club Mysore Road</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹550</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container pt-4 activityInner">
+         <div class="row">
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/royal.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Royal Orchid Resort and Convention</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,350</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/camp.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Bannerghatta Nature Camp</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,416</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/wine.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Winery Tour with Wine Tasting</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹767</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+               <div class="card">
+                  <img class="card-img-top" src="assets/images/activity/tour.jpg" alt="Card image">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-lg-8 col-xl-8 col-md-8 col-12 text-md-left">
+                           <p>Ramanagar Cycling Tour and Kayaking</p>
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-12 text-right">
+                           <p>₹1,650</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--start footer-->
+      <footer class="page-footer font-small mdb-color pt-2">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-9 col-md-8 col-12">
+                  <!--Copyright-->
+                  <p class="text-md-left">© 2020 Copyright :
+                     <a href="http://travjury.com">
+                     <strong> Travel Agents</strong>
+                     </a>Powered By Travjury
+                  </p>
+               </div>
+               <div class="col-lg-3 col-md-4 col-12 foot-social">
+                  connect
+                  <a class="social-footer" href="https://www.facebook.com/travjurys" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                  </a>
+                  <a class="social-footer" href="https://twitter.com/travjuryS" target="_blank">
+                  <i class="fa fa-twitter"></i>
+                  </a>
+                  <a class="social-footer" href="https://www.linkedin.com/company/travjury-software-pvt-ltd" target="_blank">
+                  <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a class="social-footer" href="https://in.pinterest.com/travjurysoftware/?autologin=true" target="_blank">
+                  <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">Get a Cleartrip Account</h4>
+                  <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <button type="button" class="registerfb" onclick="window.location.href = 'https://www.facebook.com/';"><i class="fa fa-facebook" aria-hidden="true"></i>Sign up with Facebook</button>
+                  <form id="loginForm">
+                     <div class="container">
+                        <p>or, Sign up with your current email address</p>
+                        <hr>
+                        <label><b>Email</b></label>
+                        <input type="email" class="textBox" placeholder="Enter Email" name="email" required>
+                        <label><b>Password</b></label>
+                        <input type="password" class="textBox" placeholder="Enter Password" name="psw" required>
+                        <label><b>Repeat Password</b></label>
+                        <input type="password" class="textBox" placeholder="Repeat Password" name="psw-repeat" required>
+                        <hr>
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                        <button type="submit" class="registerbtn">Create Account</button>
+                     </div>
+                     <div class="container signin">
+                        <p>Already have an account? <a href="#">Sign in</a>.</p>
+                     </div>
+                  </form>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal" id="myModal1">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">Sign in to Cleartrip</h4>
+                  <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <button type="button" class="registerfb"><i class="fa fa-facebook" aria-hidden="true">
+                  </i>Sign in with Facebook</button>
+                  <form>
+                     <div class="container">
+                        <p>or Log in with your Cleartrip account</p>
+                        <hr>
+                        <label><b>Email</b></label>
+                        <input type="email" class="textBox" placeholder="Enter Email" name="email" required>
+                        <label><b>Password</b></label>
+                        <input type="password" class="textBox" placeholder="Enter Password" name="psw" required>
+                        <hr>
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                        <button type="submit" class="registerbtn">Sign in</button>
+                     </div>
+                     <div class="container signin">
+                        <p>Don’t have a Cleartrip Account? <a href="">Sign Up</a>.</p>
+                     </div>
+                  </form>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--End footer-->
+      <script src="assets/js/jquery-3.4.1.js"></script>
+      <script src="assets/js/wow.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+   </body>
+</html>

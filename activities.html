@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Welcome to ClearTripClone</title>
+      <link rel="shortcut icon" type="image/x-icon" href="assets/images/inner/favicon.png" />
+      <link rel="stylesheet" type="text/css" href="calenplugin/css/daterangepicker.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+      <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <!--start Header-->
+      <header id="header">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <a href="index.html" class="navbar-brand font-weight-bold wow fadeInDown">
+                  <h2>
+                     Travel Agents
+                     <!--<img src="" class="img-logo img-fluid" alt="logo"/>-->
+                  </h2>
+               </a>
+               <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsenavbar">
+               <i class="fa fa-align-justify"></i>
+               </button>
+               <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+                  <ul class="navbar-nav ml-auto ">
+                     <li class="nav-item dropdown nav-left">
+                        <div class="wow fadeInDown nav-img" data-wow-delay="70ms">
+                           <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                           <img src="assets/images/inner/flag.png" alt="currency">
+                           </a>
+                           <div class="dropdown-menu">
+                              <a class="dropdown-item" href="">UAE</a>
+                              <a class="dropdown-item" href="">OMAN</a>
+                              <a class="dropdown-item" href="">QATAR</a>
+                              <a class="dropdown-item" href="">Bahrain</a>
+                              <a class="dropdown-item" href="">Kuwait</a>
+                              <a class="dropdown-item" href="">Saudi Arabia</a>
+                              <a class="dropdown-item" href="">Middle East</a>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown nav-left">
+                        <div class="wow fadeInDown nav-img trip" data-wow-delay="70ms">
+                           <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                           <img src="assets/images/inner/user.png" alt="currency">Your Trips
+                           </a>
+                           <div class="dropdown-menu">
+                              <a href="" class="btn-register" data-toggle="modal" data-target="#myModal1">Sign In</a>
+                              <br>
+                              <a href="" class="btn-register" data-toggle="modal" data-target="#myModal">Now Here ? Register</a>
+                              <a class="dropdown-item" href="cancellation.html">Cancellations</a>
+                              <a class="dropdown-item" href="change-flight.html">Change Flights</a>
+                              <a class="dropdown-item" href="">Check PNR Status</a>
+                              <a class="dropdown-item" href="">Print ticket</a>
+                              <a class="dropdown-item" href="">Print hotel Voucher</a>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <div class="clearfix"></div>
+      </header>
+      <section id="activityDiv">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <h2>The world awaits</h2>
+                  <p>Explore activities in 100+ cities across the world with us</p>
+                  <input type="text" class="activityBox" placeholder="Search for a City">
+                  <div class="container activityHide" style="display: none;">
+                     <h3 class="text-left pt-2 pb-2">Top Cities</h3>
+                     <div class="row">
+                        <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+                           <a href="activity-inner-page.html">
+                              <div class="activityImg">
+                                 <div class="placeName">
+                                    <h5 >BANGALORE</h5>
+                                    <p class="activityNum">900+Activities</p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+                           <a href="activity-inner-page.html">
+                              <div class="activityImg1">
+                                 <div class="placeName">
+                                    <h5 >MUMBAI</h5>
+                                    <p class="activityNum">200+Activities</p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+                           <a href="activity-inner-page.html">
+                              <div class="activityImg2">
+                                 <div class="placeName">
+                                    <h5 >GOA</h5>
+                                    <p class="activityNum">220+Activities</p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+                           <a href="activity-inner-page.html">
+                              <div class="activityImg3">
+                                 <div class="placeName">
+                                    <h5>KOLKATA</h5>
+                                    <p class="activityNum">150+Activities</p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="container activityHideOne">
+            <h2 class="text-left pt-4 pb-4">Top Cities</h2>
+            <div class="row">
+               <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+                  <a href="activity-inner-page.html">
+                     <div class="activityImg4">
+                        <div class="placeNameOne">
+                           <h5 >BANGALORE</h5>
+                           <p class="activityNum">900+Activities</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+                  <a href="activity-inner-page.html">
+                     <div class="activityImg5">
+                        <div class="placeNameOne">
+                           <h5 >MUMBAI</h5>
+                           <p class="activityNum">200+Activities</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+                  <a href="activity-inner-page.html">
+                     <div class="activityImg6">
+                        <div class="placeNameOne">
+                           <h5 >GOA</h5>
+                           <p class="activityNum">220+Activities</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+                  <a href="activity-inner-page.html">
+                     <div class="activityImg7">
+                        <div class="placeNameOne">
+                           <h5>KOLKATA</h5>
+                           <p class="activityNum">150+Activities</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="container activityHideOne">
+            <div class="row">
+               <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+                  <a href="activity-inner-page.html">
+                     <div class="activityImg8">
+                        <div class="placeNameOne">
+                           <h5 >SINGAPORE</h5>
+                           <p class="activityNum">900+Activities</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+                  <a href="activity-inner-page.html">
+                     <div class="activityImg9">
+                        <div class="placeNameOne">
+                           <h5 >DUBAI </h5>
+                           <p class="activityNum">200+Activities</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+                  <a href="activity-inner-page.html">
+                     <div class="activityImg10">
+                        <div class="placeNameOne">
+                           <h5 >BANGKOK</h5>
+                           <p class="activityNum">220+Activities</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-3 col-xl-3 col-md-6 col-12">
+                  <a href="activity-inner-page.html">
+                     <div class="activityImg11">
+                        <div class="placeNameOne">
+                           <h5>PARIS</h5>
+                           <p class="activityNum">150+Activities</p>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="container heading-activity">
+         <h5 class="pt-4">Incredible India</h5>
+         <p class="pb-2">Everything from adventure to heritage</p>
+         <div class="row">
+            <div class="col-lg-6 col-xl-6 col-md-6 col-12">
+               <div class="row incredibleDiv">
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 incredibleImg">
+                     <img src="assets/images/activity/bang2.jpg" alt="activity-img">
+                  </div>
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 head-small">
+                     <h6 class="pt-4 pb-4">INDIA</h6>
+                     <h2>Bangalore</h2>
+                     <p class="pt-2">Quaint neighbourhoods, craft beers, adventure sports live comfortably together. Throw in green havens within driving distance, and it’s everything we love about Bangalore.</p>
+                     <a href="activity-inner-page.html">See all 900+ activities<i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-6 col-12">
+               <div class="row incredibleDiv">
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 incredibleImg">
+                     <img src="assets/images/activity/goa2.jpg" alt="activity-img">
+                  </div>
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 head-small">
+                     <h6 class="pt-4 pb-4">INDIA</h6>
+                     <h2>Goa</h2>
+                     <p class="pt-2">Quaint neighbourhoods, craft beers, adventure sports live comfortably together. Throw in green havens within driving distance, and it’s everything we love about Bangalore.</p>
+                     <a href="activity-inner-page.html">See all 220+ activities<i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container pt-4">
+         <div class="row incredibleDiv">
+            <div class="col-lg-6 col-xl-6 col-md-12 col-12 incredibleImg">
+               <img src="assets/images/activity/mumbai2.jpg" alt="activity-img">
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-12 col-12 head-small">
+               <h6 class="pt-4 pb-4">INDIA</h6>
+               <h2>Mumbai</h2>
+               <p class="pt-2">A microcosm of India, Mumbai is a melting pot of cultures, professions, and food! You’ll find everything here – incredible street food, the best fashion labels, and movie stars.</p>
+               <a href="activity-inner-page.html">See all 200+ activities<i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i></a>
+            </div>
+         </div>
+      </div>
+      <div class="container pt-4">
+         <div class="row">
+            <div class="col-lg-6 col-xl-6 col-md-6 col-12">
+               <div class="row incredibleDiv">
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 incredibleImg">
+                     <img src="assets/images/activity/bang2.jpg" alt="activity-img">
+                  </div>
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 head-small">
+                     <h6 class="pt-4 pb-4">INDIA</h6>
+                     <h2>New Delhi</h2>
+                     <p class="pt-2">If Old Delhi is in its bustling bazaars and majestic relics of its Mughal-dominated past, New Delhi is the buzz of a metropolis infused with multi-cultural spirit.</p>
+                     <a href="activity-inner-page.html">See all 150+ activities<i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-6 col-12">
+               <div class="row incredibleDiv">
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 incredibleImg">
+                     <img src="assets/images/activity/goa2.jpg" alt="activity-img">
+                  </div>
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 head-small">
+                     <h6 class="pt-4 pb-4">INDIA</h6>
+                     <h2>Kolkata</h2>
+                     <p class="pt-2">Steeped in vibrant history, rich culture, and age-old traditions, Kolkata can be overwhelming, but it’s easy to fall in love with its eccentric charms.</p>
+                     <a href="activity-inner-page.html">See all 150+ activities<i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container heading-activity">
+         <h5 class="pt-4">Best of Asia</h5>
+         <p class="pb-2">From Disneyland to pub-crawls</p>
+         <div class="row">
+            <div class="col-lg-6 col-xl-6 col-md-6 col-12">
+               <div class="row incredibleDiv">
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 incredibleImg">
+                     <img src="assets/images/activity/singapore2.jpg" alt="activity-img">
+                  </div>
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 head-small">
+                     <h6 class="pt-4 pb-4">SINGAPORE</h6>
+                     <h2>Singapore</h2>
+                     <p class="pt-2">An extraordinary landscape where soothing green spaces jostle with museums, world-class hotels, and award winning restaurants – the city is thrumming with life.</p>
+                     <a href="activity-inner-page.html">See all 60+ activities<i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-6 col-12">
+               <div class="row incredibleDiv">
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 incredibleImg">
+                     <img src="assets/images/activity/bangkok2.jpg" alt="activity-img">
+                  </div>
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 head-small">
+                     <h6 class="pt-4 pb-4">THAILAND</h6>
+                     <h2>Bangkok</h2>
+                     <p class="pt-2">Quaint neighbourhoods, craft beers, adventure sports live comfortably together. Throw in green havens within driving distance, and it’s everything we love about Bangalore.</p>
+                     <a href="activity-inner-page.html">See all 30+ activities<i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container pt-4">
+         <div class="row incredibleDiv">
+            <div class="col-lg-6 col-xl-6 col-md-12 col-12 incredibleImg">
+               <img src="assets/images/activity/hongkong.jpg" alt="activity-img">
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-12 col-12 head-small">
+               <h6 class="pt-4 pb-4">HONG KONG</h6>
+               <h2>Hong Kong</h2>
+               <p class="pt-2">With its picturesque hiking trails, luxury shopping spaces, and soaring skyline, Hong Kong has something for everyone, including foodies (dim sum anyone?)</p>
+               <a href="activity-inner-page.html">See all 50+ activities<i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i></a>
+            </div>
+         </div>
+      </div>
+      <div class="container pt-4 heading-activity">
+         <h5 class="pt-4 ">Classic Europe</h5>
+         <p class="pb-2">Truly European experiences, handpicked</p>
+         <div class="row">
+            <div class="col-lg-6 col-xl-6 col-md-12 col-12">
+               <div class="row incredibleDiv">
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 incredibleImg">
+                     <img src="assets/images/activity/london.jpg" alt="activity-img">
+                  </div>
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 head-small">
+                     <h6 class="pt-4 pb-4">UNITED KINGDOM</h6>
+                     <h2>London</h2>
+                     <p class="pt-2">With its medieval castles and palaces, pubs serving heady drinks, the world’s most admired museums, London is the archetype of everything British (humor included).</p>
+                     <a href="activity-inner-page.html">See all 150+ activities<i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-12 col-12">
+               <div class="row incredibleDiv">
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 incredibleImg">
+                     <img src="assets/images/activity/barcelona.jpg" alt="activity-img">
+                  </div>
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 head-small head-small">
+                     <h6 class="pt-4 pb-4">SPAIN</h6>
+                     <h2>Barcelona</h2>
+                     <p class="pt-2">Gothic cathedrals, whimsical public parks, and art galleries with Picasso’s paintings, and a thriving nightlife. Barcelona is like no other city in the world.</p>
+                     <a href="activity-inner-page.html">See all 120+ activities<i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container pt-4">
+         <div class="row incredibleDiv">
+            <div class="col-lg-6 col-xl-6 col-md-12 col-12 incredibleImg">
+               <img src="assets/images/activity/amsterdam.jpg" alt="activity-img">
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-12 col-12 head-small">
+               <h6 class="pt-4 pb-4">NETHERLANDS</h6>
+               <h2>Amsterdam</h2>
+               <p class="pt-2">Once a small fishing village, Amsterdam is now home to iconic art museums, buildings designed in strict Dutch fashion, and more canals than even Venice!</p>
+               <a href="activity-inner-page.html">See all 450+ activities<i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i></a>
+            </div>
+         </div>
+      </div>
+      <div class="container pt-4">
+         <div class="row">
+            <div class="col-lg-6 col-xl-6 col-md-12 col-12">
+               <div class="row incredibleDiv">
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 incredibleImg">
+                     <img src="assets/images/activity/paris1.jpg" alt="activity-img">
+                  </div>
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 head-small">
+                     <h6 class="pt-4 pb-4">FRANCE</h6>
+                     <h2>Paris</h2>
+                     <p class="pt-2">A sensory feast, Paris is all about charming cafes, alluring alleyways, delicious freshly baked bread, incredible cheese, and arguably some of the best wine in Europe.</p>
+                     <a href="activity-inner-page.html">See all 390+ activities<i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-12 col-12">
+               <div class="row incredibleDiv">
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 incredibleImg">
+                     <img src="assets/images/activity/florence.jpg" alt="activity-img">
+                  </div>
+                  <div class="col-lg-6 col-xl-6 col-md-12 col-12 head-small">
+                     <h6 class="pt-4 pb-4">ITALY</h6>
+                     <h2>Florence</h2>
+                     <p class="pt-2">With modern, contemporary art and graffiti making its presence felt, the art scene in the world’s renaissance capital is constantly evolving (just like its wine!).</p>
+                     <a href="activity-inner-page.html">See all 200+ activities<i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--start footer-->
+      <footer class="page-footer font-small mdb-color pt-2">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-9 col-md-8 col-12">
+                  <!--Copyright-->
+                  <p class="text-md-left">© 2020 Copyright :
+                     <a href="http://travjury.com">
+                     <strong> Travel Agents</strong>
+                     </a>Powered By Travjury
+                  </p>
+               </div>
+               <div class="col-lg-3 col-md-4 col-12 foot-social">
+                  connect
+                  <a class="social-footer" href="https://www.facebook.com/travjurys" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                  </a>
+                  <a class="social-footer" href="https://twitter.com/travjuryS" target="_blank">
+                  <i class="fa fa-twitter"></i>
+                  </a>
+                  <a class="social-footer" href="https://www.linkedin.com/company/travjury-software-pvt-ltd" target="_blank">
+                  <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a class="social-footer" href="https://in.pinterest.com/travjurysoftware/?autologin=true" target="_blank">
+                  <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">Get a Cleartrip Account</h4>
+                  <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <button type="button" class="registerfb" onclick="window.location.href = 'https://www.facebook.com/';"><i class="fa fa-facebook" aria-hidden="true"></i>Sign up with Facebook</button>
+                  <form id="loginForm">
+                     <div class="container">
+                        <p>or, Sign up with your current email address</p>
+                        <hr>
+                        <label><b>Email</b></label>
+                        <input type="email" class="textBox" placeholder="Enter Email" name="email" required>
+                        <label><b>Password</b></label>
+                        <input type="password" class="textBox" placeholder="Enter Password" name="psw" required>
+                        <label><b>Repeat Password</b></label>
+                        <input type="password" class="textBox" placeholder="Repeat Password" name="psw-repeat" required>
+                        <hr>
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                        <button type="submit" class="registerbtn">Create Account</button>
+                     </div>
+                     <div class="container signin">
+                        <p>Already have an account? <a href="#">Sign in</a>.</p>
+                     </div>
+                  </form>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal" id="myModal1">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">Sign in to Cleartrip</h4>
+                  <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <button type="button" class="registerfb"><i class="fa fa-facebook" aria-hidden="true">
+                  </i>Sign in with Facebook</button>
+                  <form>
+                     <div class="container">
+                        <p>or Log in with your Cleartrip account</p>
+                        <hr>
+                        <label><b>Email</b></label>
+                        <input type="email" class="textBox" placeholder="Enter Email" name="email" required>
+                        <label><b>Password</b></label>
+                        <input type="password" class="textBox" placeholder="Enter Password" name="psw" required>
+                        <hr>
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                        <button type="submit" class="registerbtn">Sign in</button>
+                     </div>
+                     <div class="container signin">
+                        <p>Don’t have a Cleartrip Account? <a href="">Sign Up</a>.</p>
+                     </div>
+                  </form>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--End footer-->
+      <script src="assets/js/jquery-3.4.1.js"></script>
+      <script src="assets/js/wow.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/custom-dynamic.js"></script>
+   </body>
+</html>

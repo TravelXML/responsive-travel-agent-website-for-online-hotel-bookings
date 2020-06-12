@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Welcome to Travel Agents</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/inner/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="calenplugin/css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--start Header-->
+    <header id="header">
+        <div class="container"> 
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="index.html" class="navbar-brand font-weight-bold wow fadeInDown">
+                    <h2>
+                    Travel Agents
+                  </h2>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsenavbar">
+                    <i class="fa fa-align-justify"></i>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item dropdown nav-left">
+                            <div class="wow fadeInDown" data-wow-delay="70ms">
+                                <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                Currency <span class="inr">INR</span><img src="assets/images/inner/rupees.png" class="curr-img" alt="rupees">
+              </a >
+              <div class="dropdown-menu">
+              <a class="dropdown-item" href="">
+                <span class="inr">Australian Dollar</span>
+                <img src="assets/images/inner/dollar.png" class="curr1-img" alt="currency">
+              </a>
+                                <a class="dropdown-item" href=""><span class="inr">Canadian Dollar</span><img src="assets/images/inner/dollar.png" class="curr1-img" alt="currency"></a>
+                                <a class="dropdown-item" href=""><span class="inr">Hong Kong Dollar</span><img src="assets/images/inner/dollar.png" class="curr1-img" alt="currency"></a>
+                                <a class="dropdown-item" href=""><span class="inr">Euro</span><img src="assets/images/inner/euro.png" class="curr1-img" alt="currency"></a>
+                                <a class="dropdown-item" href=""><span class="inr">Malaysian Ringgit M</span><img src="assets/images/inner/dollar.png" class="curr1-img" alt="currency"></a>
+                                <a class="dropdown-item" href=""><span class="inr">Pakistan Rs</span></a>
+                                <a class="dropdown-item" href=""><span class="inr">US Dollar</span><img src="assets/images/inner/dollar.png" class="curr1-img" alt="currency"></a>
+                            </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown nav-left">
+                    <div class="wow fadeInDown nav-img" data-wow-delay="70ms">
+                        <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                            <img src="assets/images/inner/flag.png" alt="flag">
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="">UAE</a>
+                            <a class="dropdown-item" href="">OMAN</a>
+                            <a class="dropdown-item" href="">QATAR</a>
+                            <a class="dropdown-item" href="">Bahrain</a>
+                            <a class="dropdown-item" href="">Kuwait</a>
+                            <a class="dropdown-item" href="">Saudi Arabia</a>
+                            <a class="dropdown-item" href="">Middle East</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown nav-left">
+                    <div class="wow fadeInDown nav-img trip" data-wow-delay="70ms">
+                        <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                            <img src="assets/images/inner/user.png" alt="user">Your Trips
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="" class="btn-register" data-toggle="modal" data-target="#myModal">Sign In</a>
+                            <br>
+                            <a href="" class="btn-register" data-toggle="modal" data-target="#myModal1">Now Here ? Register</a>
+                            <a class="dropdown-item" href="">Quick Tools</a>
+                            <a class="dropdown-item" href="cancellation.html">Cancellations</a>
+                            <a class="dropdown-item" href="change-flight.html">Change Flights</a>
+                            <a class="dropdown-item" href="">Check PNR Status</a>
+                            <a class="dropdown-item" href="">Print ticket</a>
+                            <a class="dropdown-item" href="">Print hotel Voucher</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        </div>
+        <div class="clearfix"></div>
+    </header>
+     <div class="container progressBar">
+        <div class="row">
+            <div class="col-12 prog-One">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end header-->
+     <section class="loader" style="display: none;">
+    <section id="section-hotel">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-12 butonDiv">
+                    <button type="button"><i class="fa fa-play" aria-hidden="true"></i> Modify Search</button>
+                    <div class="row hiddenDiv" style="display: none;"> 
+                       <form id="trainForm">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                                            <div class="form-group">
+                                                <label>From *</label>
+                                                <input type="text" placeholder="Enter a City or Station" id="selectStation" name="selectStation" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                                            <div class="form-group">
+                                                <label>To *</label>
+                                                <input type="text" placeholder="Enter a City or Station" id="selectStation1" name="selectStation1" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                                            <div class="form-group">
+                                                <label>Class</label>
+                                                <select id="trainClass" name="trainClass" class="custom-select form-control">
+                                                    <option value="">Select Class</option>
+                                                    <option value="1">AC First Class (1A)</option>
+                                                    <option value="2">AC 2 Tier (2A)</option>
+                                                    <option value="3">AC 3 Tier (3A)</option>
+                                                    <option value="4">AC 3 Economy (3E)</option>
+                                                    <option value="5">Exec, Chair Car (EC)</option>
+                                                    <option value="6">AC Chair Car (CC)</option>
+                                                    <option value="7">First Class (FC)</option>
+                                                    <option value="8">Sleeper (SL)</option>
+                                                    <option value="9">Second Sitting (2S)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                                            <div class="form-group">
+                                                <label>Check Out*</label>
+                                                <div class="input-group margin-bottom-sm">
+                                                    <input type="text" value="10/24/1984" id="picker10" name="picker" class="form-control" required>
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fa fa-calendar fa-fw"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hiddenDiv1">
+                                            <div class="col-md-12 col-lg-3 col-xl-3 col-12">
+                                                <div class="form-group">
+                                                    <label>Adults*</label>
+                                                    <select id="trainAdults" name="trainAdults" class="custom-select form-control">
+                                                        <option value="">12-60yr</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-3 col-xl-3 col-12">
+                                                <div class="form-group">
+                                                    <label>Children*</label>
+                                                    <select id="trainChild" name="trainChild" class="custom-select form-control">
+                                                        <option value="">5-11yr</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-3 col-xl-3 col-12">
+                                                <div class="form-group">
+                                                    <label>Senior Men*</label>
+                                                    <select id="trainSenior" name="trainSenior" class="custom-select form-control">
+                                                        <option value="">60+yr</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-3 col-xl-3 col-12">
+                                                <div class="form-group">
+                                                    <label>Senior Women*</label>
+                                                    <select id="trainWomen" name="trainWomen" class="custom-select form-control">
+                                                        <option value="">58+yr</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="buttonDiv float-right">
+                                      <input type="submit" name="submit" value="Search Trains" class="submitButton">
+                                    </div>
+                                </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3 col-12 listInner text-right">
+                    <span class="listDiv"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Previous Day</span>
+                    <span class="calDiv">Next Day<i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <!--left portion start-->
+                <div class="col-md-12 col-lg-3 col-xl-3 col-xs-12 mx-auto mt-3 ">
+                    <div class="filter-head text-left">
+                        <h6>4 of 4 Trains</h6>
+                    </div>
+                    <div class="filter-area">
+                        <h6>Departure Time in Hours</h6>
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="24" value="12" class="slider" id="myRange">
+                            <p>Value: <span id="tripDur"></span></p>
+                        </div>
+                    </div>
+                    <div class="filter-area">
+                        <h6>Arrival Time in Hours</h6>
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="24" value="14" class="slider" id="myRange1">
+                            <p>Value: <span id="layOver"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--left portion end-->
+                <!--right portion start-->
+                <div class="col-md-12 col-lg-9 col-xl-9 col-sm-12 mx-auto mt-3 hotel-listing">
+                    <!-- START: HOTEL LIST VIEW -->
+                    <div class="row">
+                        <div class="col wow zoomIn">
+                            <div class="hotel-list-view">
+                                <div class="row hotel-search-div">
+                                    <div class="col-lg-9 col-md-9 col-12">
+                                        <div class="input-group">
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i><span>Search Trains:</span>
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Search for Trains, ">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-12 shortlist1">
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                        <span>You Shortlist(0)</span><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="row hotel-name">
+                                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4">
+                                        <a href="">
+                                            Train Name
+                                        </a>
+                                    </div>
+                                    <div class="col-md-1 col-lg-1 col-xl-1 col-sm-1 priceUp">
+                                        <a href="">
+                                            Departs
+                                        </a>
+                                    </div>
+                                    <div class="col-md-1 col-lg-1 col-xl-1 col-sm-1">
+                                        <a href="">
+                                           Arrives
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-lg-2 col-xl-2 col-sm-2">
+                                        <a href="">
+                                            Duration
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4">
+                                        <a href="">
+                                            Fare
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- END: CRUISE LIST VIEW -->
+                    <!-- START: HOTEL LIST VIEW -->
+                    <div class="row hotel-name wow zoomIn">
+                        <div class="col-12">
+                            <div class="row train-name">
+                                <div class="col-md-4 col-lg-4 col-xl-4 col-12 text-left ">
+                                    <h4>Mahananda Express <span>(15483)</span></h4>
+                                    <p>Patna Junction - Delhi</p>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>01:20</h6>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>22:04</h6>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h6>21h 20m</h6>
+                                    <p>27 Stops</p>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h3>Rs. 1,898</h3>
+                                    <select class="custom-select mb-3 form-control">
+                                        <option selected>AC 2 tier</option>
+                                        <option value="1">AC 3 tier</option>
+                                        <option value="2">Sleeper</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <button class="check-avail" onclick="window.location.href = 'train-booking.html';">Book</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- END: CRUISE LIST VIEW -->
+                    <!-- START: HOTEL LIST VIEW -->
+                    <div class="row hotel-name wow zoomIn">
+                        <div class="col-12">
+                            <div class="row train-name">
+                                <div class="col-md-4 col-lg-4 col-xl-4 col-12 text-left ">
+                                    <h4>North East Exp <span>(12505)</span></h4>
+                                    <p>Patliputra - Anand Vihar Trm</p>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>03:10</h6>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>19:20</h6>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h6>16h 10m</h6>
+                                    <p>27 Stops</p>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h3>Rs. 1,925</h3>
+                                    <select class="custom-select mb-3 form-control">
+                                        <option selected>AC 2 tier</option>
+                                        <option value="1">AC 3 tier</option>
+                                        <option value="2">Sleeper</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <button class="check-avail" onclick="window.location.href = 'train-booking.html';">Book</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- START: HOTEL LIST VIEW -->
+                    <div class="row hotel-name wow zoomIn">
+                        <div class="col-12">
+                            <div class="row train-name">
+                                <div class="col-md-4 col-lg-4 col-xl-4 col-12 text-left ">
+                                    <h4>Farakka Express <span>((13483)</span></h4>
+                                    <p>Patna Junction - Delhi</p>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>04:55</h6>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>04:50</h6>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h6>23h 55m</h6>
+                                    <p>43 stops</p>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h3>Rs. 1,965</h3>
+                                    <select class="custom-select mb-3 form-control">
+                                        <option selected>AC 2 tier</option>
+                                        <option value="1">AC 3 tier</option>
+                                        <option value="2">Sleeper</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <button class="check-avail" onclick="window.location.href = 'train-booking.html';">Book</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- START: HOTEL LIST VIEW -->
+                    <!-- START: HOTEL LIST VIEW -->
+                    <div class="row hotel-name wow zoomIn">
+                        <div class="col-12">
+                            <div class="row train-name">
+                                <div class="col-md-4 col-lg-4 col-xl-4 col-12 text-left ">
+                                    <h4>Seemanchal Exp <span>(12487)</span></h4>
+                                    <p>Patliputra - Anand Vihar Trm</p>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>05:25</h6>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>21:00</h6>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h6>15h 35m</h6>
+                                    <p>27 Stops</p>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h3>Rs. 1,925</h3>
+                                    <select class="custom-select mb-3 form-control">
+                                        <option selected>AC 2 tier</option>
+                                        <option value="1">AC 3 tier</option>
+                                        <option value="2">Sleeper</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <button class="check-avail" onclick="window.location.href = 'train-booking.html';">Book</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- END: CRUISE LIST VIEW -->
+                    <!-- START: HOTEL LIST VIEW -->
+                    <div class="row hotel-name wow zoomIn">
+                        <div class="col-12">
+                            <div class="row train-name">
+                                <div class="col-md-4 col-lg-4 col-xl-4 col-12 text-left ">
+                                    <h4>Rdp Anvt Link Ex <span>(22487)</span></h4>
+                                    <p>Patliputra - Anand Vihar Trm</p>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>05:25</h6>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>21:00</h6>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h6>15h 35m</h6>
+                                    <p>27 Stops</p>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h3>Rs. 1,320</h3>
+                                    <select class="custom-select mb-3 form-control">
+                                        <option selected>AC 2 tier</option>
+                                        <option value="1">AC 3 tier</option>
+                                        <option value="2">Sleeper</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <button class="check-avail" onclick="window.location.href = 'train-booking.html';">Book</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- START: HOTEL LIST VIEW -->
+                    <div class="row hotel-name wow zoomIn">
+                        <div class="col-12">
+                            <div class="row train-name">
+                                <div class="col-md-4 col-lg-4 col-xl-4 col-12 text-left ">
+                                    <h4>Shramjeevi Exp<span>(12391)</span></h4>
+                                    <p>Patna Junction - New Delhi</p>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>10:25</h6>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>04:45</h6>
+                                    <p>21 Feb</p>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h6>18h 20m</h6>
+                                    <p>21 stops</p>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h3>Rs. 3,290</h3>
+                                    <select class="custom-select mb-3 form-control">
+                                        <option selected>AC 2 tier</option>
+                                        <option value="1">AC 3 tier</option>
+                                        <option value="2">Sleeper</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <button class="check-avail" onclick="window.location.href = 'train-booking.html';">Book</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- START: HOTEL LIST VIEW -->
+                    <div class="row hotel-name wow zoomIn">
+                        <div class="col-12">
+                            <div class="row train-name">
+                                <div class="col-md-4 col-lg-4 col-xl-4 col-12 text-left ">
+                                    <h4>Brahmputra Mail <span>(15955)</span></h4>
+                                    <p>Patna Junction - Delhi</p>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>12:50</h6>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>06:05</h6>
+                                    <p>6 Feb</p>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h6>17h 15m</h6>
+                                    <p>27 Stops</p>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h3>Rs. 1,890</h3>
+                                    <select class="custom-select mb-3 form-control">
+                                        <option selected>AC 2 tier</option>
+                                        <option value="1">AC 3 tier</option>
+                                        <option value="2">Sleeper</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <button class="check-avail" onclick="window.location.href = 'train-booking.html';">Book</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!-- START: HOTEL LIST VIEW -->
+                    <div class="row hotel-name wow zoomIn">
+                        <div class="col-12">
+                            <div class="row train-name">
+                                <div class="col-md-4 col-lg-4 col-xl-4 col-12 text-left ">
+                                    <h4>Magadh Express<span>(20801)</span></h4>
+                                    <p>Patna Junction - Delhi</p>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>17:25</h6>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1">
+                                    <h6>11:50</h6>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h6>18h 25m</h6>
+                                    <p>27 Stops</p>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <h3>Rs. 3,165</h3>
+                                    <select class="custom-select mb-3 form-control">
+                                        <option selected>AC 2 tier</option>
+                                        <option value="1">AC 3 tier</option>
+                                        <option value="2">Sleeper</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <button class="check-avail" onclick="window.location.href = 'train-booking.html';">Book</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end Section1-->
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Get a Cleartrip Account</h4>
+                    <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <button type="button" class="registerfb"><i class="fa fa-facebook" aria-hidden="true"></i>Sign up with Facebook</button>
+                   <form action="/action_page.php">
+                        <div class="container">
+                            <p>or, Sign up with your current email address</p>
+                            <hr>
+                            <label><b>Email</b></label>
+                            <input type="email" class="textBox" placeholder="Enter Email" name="email" required>
+
+                            <label><b>Password</b></label>
+                            <input type="password" class="textBox" placeholder="Enter Password" name="psw" required>
+
+                            <label><b>Repeat Password</b></label>
+                            <input type="password" class="textBox" placeholder="Repeat Password" name="psw-repeat" required>
+                            <hr>
+                            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                            <button type="submit" class="registerbtn">Create Account</button>
+                        </div>
+                        <div class="container signin">
+                            <p>Already have an account? <a href="#">Sign in</a>.</p>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Sign in to Cleartrip</h4>
+                    <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <button type="button" class="registerfb" onclick="window.location.href = 'https://www.facebook.com/';"><i class="fa fa-facebook" aria-hidden="true">
+                   </i>Sign in with Facebook</button>
+                    <form>
+                        <div class="container">
+                            <p>or Log in with your Cleartrip account</p>
+                            <hr>
+                            <label><b>Email</b></label>
+                            <input type="email" class="textBox" placeholder="Enter Email" name="email" required>
+
+                            <label><b>Password</b></label>
+                            <input type="password" class="textBox" placeholder="Enter Password" name="psw" required>
+
+                            <hr>
+                            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                            <button type="submit" class="registerbtn">Sign in</button>
+                        </div>
+                        <div class="container signin">
+                            <p>Don’t have a Cleartrip Account? <a href="">Sign Up</a>.</p>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--start footer-->
+    <footer class="page-footer font-small mdb-color pt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 col-12">
+                    <div class="text-center text-md-left">
+                        <!--Copyright-->
+                        <p class="text-md-left">© 2020 Copyright :
+                            <a href="http://travjury.com">
+                                <strong> Travel Agents</strong>
+                            </a>Powered By Travjury
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 foot-social">
+                    connect
+                    <a class="social-footer" href="https://www.facebook.com/travjurys" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="social-footer" href="https://twitter.com/travjuryS" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="social-footer" href="https://www.linkedin.com/company/travjury-software-pvt-ltd" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a class="social-footer" href="https://in.pinterest.com/travjurysoftware/?autologin=true" target="_blank">
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+    <!--End footer-->
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/validate.js"></script>
+    <script  src="assets/js/countries.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom-dynamic.js"></script>
+     <script src="assets/js/train-range.js"></script>
+    <script src="calenplugin/js/moment.min.js"></script>
+    <script src="calenplugin/js/daterangepicker.min.js"></script>
+    <script src="calenplugin/js/select.js"></script>
+</body>
+</html>

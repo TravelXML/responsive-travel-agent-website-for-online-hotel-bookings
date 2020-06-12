@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Welcome to ClearTripClone</title>
+      <link rel="shortcut icon" type="image/x-icon" href="assets/images/inner/favicon.png" />
+      <link rel="stylesheet" type="text/css" href="calenplugin/css/daterangepicker.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+      <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <!--start Header-->
+      <header id="header">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <a href="index.html" class="navbar-brand font-weight-bold wow fadeInDown">
+                  <h2>
+                     Travel Agents
+                     <!--<img src="" class="img-logo img-fluid" alt="logo"/>-->
+                  </h2>
+               </a>
+               <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsenavbar">
+               <i class="fa fa-align-justify"></i>
+               </button>
+               <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+                  <ul class="navbar-nav ml-auto ">
+                     <li class="nav-item dropdown nav-left">
+                        <div class="wow fadeInDown nav-img" data-wow-delay="70ms">
+                           <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                           <img src="assets/images/inner/flag.png" alt="currency">
+                           </a>
+                           <div class="dropdown-menu">
+                              <a class="dropdown-item" href="">UAE</a>
+                              <a class="dropdown-item" href="">OMAN</a>
+                              <a class="dropdown-item" href="">QATAR</a>
+                              <a class="dropdown-item" href="">Bahrain</a>
+                              <a class="dropdown-item" href="">Kuwait</a>
+                              <a class="dropdown-item" href="">Saudi Arabia</a>
+                              <a class="dropdown-item" href="">Middle East</a>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <div class="clearfix"></div>
+      </header>
+      <!--end header-->
+      <section id="section-one">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-xl-3 col-md-4 col-12 mb-3 ">
+                  <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+                     <li class="nav-item">
+                        <a class="nav-link active" id="deal-tab" data-toggle="tab" href="#deal" role="tab" aria-controls="deal" aria-selected="true">
+                        <b>Get Offers On</b>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" id="domestic-tab" data-toggle="tab" href="#domestic" role="tab" aria-controls="domestic" aria-selected="false"> <i class="fa fa-fighter-jet" aria-hidden="true"></i>Domestics Flights<i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" id="international-tab" data-toggle="tab" href="#international" role="tab" aria-controls="international" aria-selected="false"><i class="fa fa-globe" aria-hidden="true"></i>International Flights<i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="hotel" aria-selected="false"><i class="fa fa-bed" aria-hidden="true"></i>Hotels <i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="activities.html" role="tab" aria-selected="false"><i class="fa fa-motorcycle" aria-hidden="true"></i>Activities<i class="fa fa-angle-right float-right" aria-hidden="true"></i></a>
+                     </li>
+                  </ul>
+                  <h5 class="pt-3">Never miss a deal. Subscribe Now.</h5>
+                  <form>
+                  <label>Name *</label>
+                  <div class="form-group">
+                     <input type="text" name="nameOne" class="form-control" required>
+                  </div>
+                  <label>Email *</label>
+                  <div class="form-group ">
+                     <input type="email" name="emailDiv" class="form-control" required>
+                  </div>
+                  <button type="submit" class="flightDealSub">Subscribe</button>
+               </div>
+               </form>
+               <!-- /.col-md-4 -->
+               <div class="col-lg-6 col-xl-6 col-md-8 col-12 flight-search">
+                  <div class="tab-content" id="myTabContent">
+                     <div class="tab-pane fade show active" id="deal" role="tabpanel" aria-labelledby="deal-tab">
+                        <h3 class="pb-4">All offers and deals</h3>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv">
+                              <img src="assets/images/flight-deal/deal.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Domestic Flights Exclusive Deal!</h5>
+                              <p>Flight Special! Up to Rs.1,500 Cashback on Domestic Flight Bookings</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 1 week 4 days</p>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                              <img src="assets/images/flight-deal/deal1.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Upto Rs.2,800 instant savings:</h5>
+                              <p>Book Domestic Flights & Hotels with HSBC Credit Cards.</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                           </div>
+                        </div>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv pt-4">
+                              <img src="assets/images/flight-deal/deal2.png" alt="flight-deal-img">
+                              <h5 class="pt-3">International flight offer</h5>
+                              <p>Get up to Rs 2,500 instant cashback on International flights</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 4 week 32 days</p>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 pt-4">
+                              <img src="assets/images/flight-deal/deal3.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Upto Rs.10,000 instant cashback</h5>
+                              <p>Grab up to Rs.10,000 instant cashback on International Flights!</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 5 week 38 days</p>
+                           </div>
+                        </div>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv pt-4">
+                              <img src="assets/images/flight-deal/deal4.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Grab 10% cashback!</h5>
+                              <p>Book Cleartrip Activities, Flights & Hotels with Airtel Payments Bank.</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 pt-4">
+                              <img src="assets/images/flight-deal/deal5.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Cleartrip Activities Is Now Global!</h5>
+                              <p>Book Cleartrip Activities Across Globe!</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 3 week 18 days</p>
+                           </div>
+                        </div>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv pt-4">
+                              <img src="assets/images/flight-deal/deal6.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Earn & redeem PAYBACK Points on your Flight & Hotel bookings with Cleartrip.</h5>
+                              <p>Earn PAYBACK Points on flight and hotel Bookings with Cleartrip!</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 2 week 14 days</p>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 pt-4">
+                              <img src="assets/images/flight-deal/deal7.png" alt="flight-deal-img">
+                              <h5 class="pt-3 pb-4">Activities offer!</h5>
+                              <p class="pt-4">Get up to 25% cashback on Activities</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 4 week 32 days</p>
+                           </div>
+                        </div>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv pt-4">
+                              <img src="assets/images/flight-deal/deal8.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Emirates Airlines Sale!</h5>
+                              <p>Explore the Best of USA with Special fares on Emirates Airlines for Flights...</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 2 week 18 days</p>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 pt-4">
+                              <img src="assets/images/flight-deal/deal9.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Travel Fest!</h5>
+                              <p>Travel Fest! 10% Instant Cashback on Domestic Hotels</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 5 days 67 hours</p>
+                           </div>
+                        </div>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv pt-4">
+                              <img src="assets/images/flight-deal/deal10.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Thai Airways Offer!</h5>
+                              <p>Explore the World with Thai Airways. Special Roundtrip Fares in Economy Class..</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 2 week 16 days</p>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 pt-4">
+                              <img src="assets/images/flight-deal/deal11.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Emirates Airlines Sale!!!</h5>
+                              <p class="pb-3">Explore the world with Emirates Airlines. Special Roundtrip Fares starting.</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                           </div>
+                        </div>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv pt-4">
+                              <img src="assets/images/flight-deal/deal12.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Virign Atlantic Sale!</h5>
+                              <p>Special One Way Fares starting from Rs.40,275 and Roundtrip Fares starting Rs....</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 4 days 17 hours</p>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 pt-4">
+                              <img src="assets/images/flight-deal/deal13.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Singapore Airlines and SilkAir Sale!</h5>
+                              <p>Grab Up to Rs 1,600 Instant Cash Back on Singapore and SilkAir along with...</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 3 days 13 hours</p>
+                           </div>
+                        </div>
+                        <div class="text-center">
+                           <button class="mt-4 mb-4 expireDiv">View All <b>Expire Offers</b> Now</button>
+                        </div>
+                     </div>
+                     <div class="tab-pane fade" id="domestic" role="tabpanel" aria-labelledby="domestic-tab">
+                        <h3 class="pb-4">Domestic Flight Offers</h3>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv">
+                              <img src="assets/images/flight-deal/deal.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Domestic Flights Exclusive Deal!</h5>
+                              <p>Flight Special! Up to Rs.1,500 Cashback on Domestic Flight Bookings</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 1 week 4 days</p>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                              <img src="assets/images/flight-deal/deal1.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Upto Rs.2,800 instant savings:</h5>
+                              <p>Book Domestic Flights & Hotels with HSBC Credit Cards.</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                           </div>
+                        </div>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv pt-4">
+                              <img src="assets/images/flight-deal/deal6.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Earn & redeem PAYBACK Points on your Flight & Hotel bookings with Cleartrip.</h5>
+                              <p>Earn PAYBACK Points on flight and hotel Bookings with Cleartrip!</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 2 week 14 days</p>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv pt-4">
+                              <img src="assets/images/flight-deal/deal4.png" alt="flight-deal-img">
+                              <h5 class="pt-3 pb-4">Grab 10% cashback!</h5>
+                              <p class="pt-3">Book Cleartrip Activities, Flights & Hotels with Airtel Payments Bank.</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="tab-pane fade" id="international" role="tabpanel" aria-labelledby="international-tab">
+                        <h3 class="pb-4">International Flight Offers</h3>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv">
+                              <img src="assets/images/flight-deal/deal2.png" alt="flight-deal-img">
+                              <h5 class="pt-3">International flight offer</h5>
+                              <p>Get up to Rs 2,500 instant cashback on International flights</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 4 week 32 days</p>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                              <img src="assets/images/flight-deal/deal3.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Upto Rs.10,000 instant cashback</h5>
+                              <p>Grab up to Rs.10,000 instant cashback on International Flights!</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 5 week 38 days</p>
+                           </div>
+                        </div>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv pt-4">
+                              <img src="assets/images/flight-deal/deal4.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Grab 10% cashback!</h5>
+                              <p>Book Cleartrip Activities, Flights & Hotels with Airtel Payments Bank.</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv pt-4">
+                              <img src="assets/images/flight-deal/deal12.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Virign Atlantic Sale!</h5>
+                              <p>Special One Way Fares starting from Rs.40,275 and Roundtrip Fares starting Rs....</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 4 days 17 hours</p>
+                           </div>
+                        </div>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv pt-4">
+                              <img src="assets/images/flight-deal/deal6.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Earn & redeem PAYBACK Points on your Flight & Hotel bookings with Cleartrip.</h5>
+                              <p>Earn PAYBACK Points on flight and hotel Bookings with Cleartrip!</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 2 week 14 days</p>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 pt-4">
+                              <img src="assets/images/flight-deal/deal13.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Singapore Airlines and SilkAir Sale!</h5>
+                              <p>Grab Up to Rs 1,600 Instant Cash Back on Singapore and SilkAir along with...</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 3 days 13 hours</p>
+                           </div>
+                        </div>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv pt-4">
+                              <img src="assets/images/flight-deal/deal10.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Thai Airways Offer!</h5>
+                              <p>Explore the World with Thai Airways. Special Roundtrip Fares in Economy Class..</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 2 week 16 days</p>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 pt-4">
+                              <img src="assets/images/flight-deal/deal11.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Emirates Airlines Sale!!!</h5>
+                              <p class="pb-3">Explore the world with Emirates Airlines. Special Roundtrip Fares starting.</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                           </div>
+                        </div>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv pt-4">
+                              <img src="assets/images/flight-deal/deal8.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Emirates Airlines Sale!</h5>
+                              <p>Explore the Best of USA with Special fares on Emirates Airlines for Flights...</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 2 week 18 days</p>
+                           </div>
+                        </div>
+                        <div class="text-center">
+                           <button class="mt-4 mb-4 expireDiv">View All <b>Expire Offers</b> Now</button>
+                        </div>
+                     </div>
+                     <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
+                        <h3 class="pb-4">Hotel Offers</h3>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv">
+                              <img src="assets/images/flight-deal/deal9.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Travel Fest!</h5>
+                              <p>Travel Fest! 10% Instant Cashback on Domestic Hotels</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 1 week 4 days</p>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                              <img src="assets/images/flight-deal/deal1.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Upto Rs.2,800 instant savings:</h5>
+                              <p>Book Domestic Flights & Hotels with HSBC Credit Cards.</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                           </div>
+                        </div>
+                        <div class="row dealDivOne">
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv pt-4">
+                              <img src="assets/images/flight-deal/deal4.png" alt="flight-deal-img">
+                              <h5 class="pt-3 pb-3">Grab 10% cashback!</h5>
+                              <p class="pt-4">Book Cleartrip Activities, Flights & Hotels with Airtel Payments Bank.</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 2 week 14 days</p>
+                           </div>
+                           <div class="col-md-12 col-lg-6 col-xl-6 col-12 exclusiveDiv pt-4">
+                              <img src="assets/images/flight-deal/deal6.png" alt="flight-deal-img">
+                              <h5 class="pt-3">Earn & redeem PAYBACK Points on your Flight & Hotel bookings with Cleartrip.</h5>
+                              <p>Earn PAYBACK Points on flight and hotel Bookings with Cleartrip!</p>
+                              <button class="mt-4 flightDealBtn">Know More</button>
+                              <p class="pt-4"><b>Expires</b> in 2 week 14 days</p>
+                           </div>
+                        </div>
+                        <div class="text-center">
+                           <button class="mt-4 mb-4 expireDiv">View All <b>Expire Offers</b> Now</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="container pt-3">
+                     <div class="row">
+                        <div class="col-xs-12">
+                           <nav>
+                              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                 <a class="nav-item nav-link deal-tab active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa fa-plane" aria-hidden="true"></i></a>
+                                 <a class="nav-item nav-link deal-tab"  id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa fa-bed" aria-hidden="true"></i></a>
+                                 <a class="nav-item nav-link deal-tab" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fa fa-train" aria-hidden="true"></i></a>
+                              </div>
+                           </nav>
+                           <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                 <form id="myForm">
+                                    <div class="row">
+                                       <div class="col-12">
+                                          <div class="form-group">
+                                             <label>From *</label>
+                                             <select id="country" name="country" class="custom-select form-control">
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="col-12">
+                                          <div class="form-group">
+                                             <label>To*</label>
+                                             <select id="country1" name ="country1" class="custom-select form-control">
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="col-12">
+                                          <div class="row">
+                                             <div class="col-12">
+                                                <div class="form-group">
+                                                   <label>Depart on*</label>
+                                                   <div class="input-group margin-bottom-sm">
+                                                      <input type="text" value="" id="picker" name="picker" class="form-control" required>
+                                                      <div class="input-group-append">
+                                                         <span class="input-group-text"><i class="fa fa-calendar fa-fw"></i></span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-12 col-lg-4 col-xl-4 col-12">
+                                          <div class="form-group">
+                                             <label>Adult*</label>
+                                             <select id="adultDiv" name="adultDiv" class="custom-select form-control">
+                                                <option value="">12+yr</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-12 col-lg-4 col-xl-4 col-12">
+                                          <div class="form-group">
+                                             <label>Children*</label>
+                                             <select id="childDiv" name="childDiv" class="custom-select form-control">
+                                                <option value="">0+11yr</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="1">4</option>
+                                                <option value="2">5</option>
+                                                <option value="3">6</option>
+                                                <option value="1">7</option>
+                                                <option value="2">8</option>
+                                                <option value="3">9</option>
+                                                <option value="2">10</option>
+                                                <option value="3">11</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-12 col-lg-4 col-xl-4 col-12">
+                                          <div class="form-group">
+                                             <label>Infants*</label>
+                                             <select id="infantDiv" name="infantDiv" class="custom-select form-control">
+                                                <option value="" >Select</option>
+                                                <option value="1">0</option>
+                                                <option value="2">1</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-12 toggleDiv">
+                                       <i class="fa fa-play" aria-hidden="true"></i>
+                                       <b>More options:</b> Class of travel, Airline preference 
+                                    </div>
+                                    <div class="row hiddenDiv" style="display: none;">
+                                       <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                                          <div class="form-group">
+                                             <label>Class of Travel</label>
+                                             <select id="economyDiv" name="economyDiv" class="custom-select form-control">
+                                                <option value="">Select</option>
+                                                <option value="1">Economy</option>
+                                                <option value="2">Business</option>
+                                                <option value="3">First</option>
+                                                <option value="4">Premium Economy</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                                          <div class="form-group">
+                                             <label>Preferred Airline</label>
+                                             <input type="text" class="form-control" placeholder="Airline Name" name="fname" id="fname" />
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="buttonDiv float-right">
+                                       <input type="submit" name="submit" class="submitButton" value="Search Flights">
+                                    </div>
+                                 </form>
+                              </div>
+                              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                 <form id="hotelForm">
+                                    <div class="row">
+                                       <div class="col-md-12 col-lg-12 col-xl-12 col-12">
+                                          <label>Where*</label>
+                                          <div class="form-group">
+                                             <input type="text" placeholder="Enter Locality, Landmark, City or Hotel" id="selectCity" name="selectCity" class="form-control">
+                                          </div>
+                                       </div>
+                                       <div class="col-12">
+                                          <div class="form-group">
+                                             <label>Check In*</label>
+                                             <div class="input-group margin-bottom-sm">
+                                                <input type="text" value="10/24/1984" id="picker6" name="picker" class="form-control" required>
+                                                <div class="input-group-append">
+                                                   <span class="input-group-text"><i class="fa fa-calendar fa-fw"></i></span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-12">
+                                          <div class="form-group">
+                                             <label>Check Out*</label>
+                                             <div class="input-group margin-bottom-sm">
+                                                <input type="text" value="10/24/1984" id="picker7" name="picker" class="form-control" required>
+                                                <div class="input-group-append">
+                                                   <span class="input-group-text"><i class="fa fa-calendar fa-fw"></i></span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-12">
+                                          <div class="form-group">
+                                             <label>Travellers</label>
+                                             <select id="travelRoom" name="travelRoom" class="custom-select form-control">
+                                                <option value="">Select</option>
+                                                <option value="1">1 Room, 1 Adults</option>
+                                                <option value="2">1 Room, 2 Adults</option>
+                                                <option value="3">2 Room, 4 Adults</option>
+                                                <option value="4">2 Room, 8 Adults</option>
+                                                <option value="5">More Travellers</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="buttonDiv float-right">
+                                       <input type="submit" name="submit" value="Search Hotels" class="submitButton">
+                                    </div>
+                                 </form>
+                              </div>
+                              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                 <form id="trainForm">
+                                    <div class="row">
+                                       <div class="col-12">
+                                          <div class="form-group">
+                                             <label>From *</label>
+                                             <input type="text" placeholder="Enter a City or Station" id="selectStation" name="selectStation" class="form-control">
+                                          </div>
+                                       </div>
+                                       <div class="col-12">
+                                          <div class="form-group">
+                                             <label>To *</label>
+                                             <input type="text" placeholder="Enter a City or Station" id="selectStation1" name="selectStation1" class="form-control">
+                                          </div>
+                                       </div>
+                                       <div class="col-12">
+                                          <div class="form-group">
+                                             <label>Class</label>
+                                             <select id="trainClass" name="trainClass" class="custom-select form-control">
+                                                <option value="">Select Class</option>
+                                                <option value="1">AC First Class (1A)</option>
+                                                <option value="2">AC 2 Tier (2A)</option>
+                                                <option value="3">AC 3 Tier (3A)</option>
+                                                <option value="4">AC 3 Economy (3E)</option>
+                                                <option value="5">Exec, Chair Car (EC)</option>
+                                                <option value="6">AC Chair Car (CC)</option>
+                                                <option value="7">First Class (FC)</option>
+                                                <option value="8">Sleeper (SL)</option>
+                                                <option value="9">Second Sitting (2S)</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="col-12">
+                                          <div class="form-group">
+                                             <label>Check Out*</label>
+                                             <div class="input-group margin-bottom-sm">
+                                                <input type="text" value="10/24/1984" id="picker10" name="picker" class="form-control" required>
+                                                <div class="input-group-append">
+                                                   <span class="input-group-text"><i class="fa fa-calendar fa-fw"></i></span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row hiddenDiv1">
+                                          <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                                             <div class="form-group">
+                                                <label>Adults*</label>
+                                                <select id="trainAdults" name="trainAdults" class="custom-select form-control">
+                                                   <option value="">12-60yr</option>
+                                                   <option value="1">1</option>
+                                                   <option value="2">2</option>
+                                                   <option value="3">3</option>
+                                                   <option value="4">4</option>
+                                                   <option value="5">5</option>
+                                                   <option value="6">6</option>
+                                                   <option value="7">7</option>
+                                                   <option value="8">8</option>
+                                                   <option value="9">9</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                                             <div class="form-group">
+                                                <label>Children*</label>
+                                                <select id="trainChild" name="trainChild" class="custom-select form-control">
+                                                   <option value="">5-11yr</option>
+                                                   <option value="1">1</option>
+                                                   <option value="2">2</option>
+                                                   <option value="3">3</option>
+                                                   <option value="4">4</option>
+                                                   <option value="5">5</option>
+                                                   <option value="6">6</option>
+                                                   <option value="7">7</option>
+                                                   <option value="8">8</option>
+                                                   <option value="9">9</option>
+                                                   <option value="10">10</option>
+                                                   <option value="11">11</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                                             <div class="form-group">
+                                                <label>Senior Men*</label>
+                                                <select id="trainSenior" name="trainSenior" class="custom-select form-control">
+                                                   <option value="">60+yr</option>
+                                                   <option value="1">1</option>
+                                                   <option value="2">2</option>
+                                                   <option value="3">3</option>
+                                                   <option value="4">4</option>
+                                                   <option value="5">5</option>
+                                                   <option value="6">6</option>
+                                                   <option value="7">7</option>
+                                                   <option value="8">8</option>
+                                                   <option value="9">9</option>
+                                                   <option value="10">10</option>
+                                                   <option value="11">11</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                                             <div class="form-group">
+                                                <label>Senior Women*</label>
+                                                <select id="trainWomen" name="trainWomen" class="custom-select form-control">
+                                                   <option value="">58+yr</option>
+                                                   <option value="1">1</option>
+                                                   <option value="2">2</option>
+                                                   <option value="3">3</option>
+                                                   <option value="4">4</option>
+                                                   <option value="5">5</option>
+                                                   <option value="6">6</option>
+                                                   <option value="7">7</option>
+                                                   <option value="8">8</option>
+                                                   <option value="9">9</option>
+                                                   <option value="10">10</option>
+                                                   <option value="11">11</option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="buttonDiv float-right">
+                                       <input type="submit" name="submit" value="Search Trains" class="submitButton">
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">Get a Cleartrip Account</h4>
+                  <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <button type="button" class="registerfb" onclick="window.location.href = 'https://www.facebook.com/';"><i class="fa fa-facebook" aria-hidden="true"></i>Sign up with Facebook</button>
+                  <form id="loginForm">
+                     <div class="container">
+                        <p>or, Sign up with your current email address</p>
+                        <hr>
+                        <label><b>Email</b></label>
+                        <input type="email" class="textBox" placeholder="Enter Email" name="email" required>
+                        <label><b>Password</b></label>
+                        <input type="password" class="textBox" placeholder="Enter Password" name="psw" required>
+                        <label><b>Repeat Password</b></label>
+                        <input type="password" class="textBox" placeholder="Repeat Password" name="psw-repeat" required>
+                        <hr>
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                        <button type="submit" class="registerbtn">Create Account</button>
+                     </div>
+                     <div class="container signin">
+                        <p>Already have an account? <a href="#">Sign in</a>.</p>
+                     </div>
+                  </form>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal" id="myModal1">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">Sign in to Cleartrip</h4>
+                  <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <button type="button" class="registerfb"><i class="fa fa-facebook" aria-hidden="true">
+                  </i>Sign in with Facebook</button>
+                  <form>
+                     <div class="container">
+                        <p>or Log in with your Cleartrip account</p>
+                        <hr>
+                        <label><b>Email</b></label>
+                        <input type="email" class="textBox" placeholder="Enter Email" name="email" required>
+                        <label><b>Password</b></label>
+                        <input type="password" class="textBox" placeholder="Enter Password" name="psw" required>
+                        <hr>
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                        <button type="submit" class="registerbtn">Sign in</button>
+                     </div>
+                     <div class="container signin">
+                        <p>Don’t have a Cleartrip Account? <a href="" data-toggle="modal" data-target="#myModal">Sign Up</a>.</p>
+                     </div>
+                  </form>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--start footer-->
+      <footer class="page-footer font-small mdb-color pt-2">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-9 col-md-8 col-12">
+                  <!--Copyright-->
+                  <p class="text-md-left">© 2020 Copyright :
+                     <a href="http://travjury.com">
+                     <strong> Travel Agents</strong>
+                     </a>Powered By Travjury
+                  </p>
+               </div>
+               <div class="col-lg-3 col-md-4 col-12 foot-social">
+                  connect
+                  <a class="social-footer" href="https://www.facebook.com/travjurys" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                  </a>
+                  <a class="social-footer" href="https://twitter.com/travjuryS" target="_blank">
+                  <i class="fa fa-twitter"></i>
+                  </a>
+                  <a class="social-footer" href="https://www.linkedin.com/company/travjury-software-pvt-ltd" target="_blank">
+                  <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a class="social-footer" href="https://in.pinterest.com/travjurysoftware/?autologin=true" target="_blank">
+                  <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--End footer-->
+      <script src="assets/js/jquery-3.4.1.js"></script>
+      <script src="assets/js/jquery.validate.min.js"></script>
+      <script  src="assets/js/countries.js"></script>
+      <script src="assets/js/wow.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/custom-dynamic.js"></script>
+      <script src="assets/js/validate.js"></script>
+      <script src="calenplugin/js/moment.min.js"></script>
+      <script src="calenplugin/js/daterangepicker.min.js"></script>
+      <script src="calenplugin/js/select.js"></script>
+   </body>
+</html>

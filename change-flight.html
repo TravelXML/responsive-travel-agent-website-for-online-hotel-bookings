@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> Welcome to Travel Agents</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/inner/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="calenplugin/css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--start Header-->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="index.html" class="navbar-brand font-weight-bold wow fadeInDown">
+                    <h2>
+                    Travel Agents
+                  </h2>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsenavbar">
+                    <i class="fa fa-align-justify"></i>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item dropdown">
+                            <div class="wow fadeInDown" data-wow-delay="70ms">
+                                <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                Currency <span class="inr">INR</span><img src="assets/images/inner/rupees.png" class="curr-img" alt="currency">
+              </a >
+              <div class="dropdown-menu">
+              <a class="dropdown-item" href="">
+                <span class="inr">Australian Dollar</span>
+                <img src="assets/images/inner/dollar.png" class="curr1-img" alt="currency">
+               </a>
+                                <a class="dropdown-item" href=""><span class="inr">Canadian Dollar</span><img src="assets/images/inner/dollar.png" class="curr1-img" alt="currency"></a>
+                                <a class="dropdown-item" href=""><span class="inr">Hong Kong Dollar</span><img src="assets/images/inner/dollar.png" class="curr1-img" alt="currency"></a>
+                                <a class="dropdown-item" href=""><span class="inr">Euro</span><img src="assets/images/inner/euro.png" class="curr1-img" alt="currency" ></a>
+                                <a class="dropdown-item" href=""><span class="inr">Malaysian Ringgit M</span><img src="assets/images/inner/dollar.png" class="curr1-img" alt="currency"></a>
+                                <a class="dropdown-item" href=""><span class="inr">Pakistan Rs</span></a>
+                                <a class="dropdown-item" href=""><span class="inr" >US Dollar</span><img src="assets/images/inner/dollar.png" class="curr1-img" alt="currency"></a>
+                            </div>
+                </div>
+                </li>
+                <li class="nav-item dropdown nav-left">
+                    <div class="wow fadeInDown nav-img" data-wow-delay="70ms">
+                        <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                            <img src="assets/images/inner/flag.png" alt="flag">
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="">UAE</a>
+                            <a class="dropdown-item" href="">OMAN</a>
+                            <a class="dropdown-item" href="">QATAR</a>
+                            <a class="dropdown-item" href="">Bahrain</a>
+                            <a class="dropdown-item" href="">Kuwait</a>
+                            <a class="dropdown-item" href="">Saudi Arabia</a>
+                            <a class="dropdown-item" href="">Middle East</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown nav-left">
+                    <div class="wow fadeInDown nav-img trip" data-wow-delay="70ms">
+                        <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                            <img src="assets/images/inner/user.png" alt="currency">Your Trips
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="" class="btn-register" data-toggle="modal" data-target="#myModal1">Sign In</a>
+                            <br>
+                            <a href="" class="btn-register" data-toggle="modal" data-target="#myModal">Now Here ? Register</a>
+                            <a class="dropdown-item" href="">Quick Tools</a>
+                            <a class="dropdown-item" href="cancellation.html">Cancellations</a>
+                            <a class="dropdown-item" href="change-flight.html">Change Flights</a>
+                            <a class="dropdown-item" href="">Check PNR Status</a>
+                            <a class="dropdown-item" href="">Print ticket</a>
+                            <a class="dropdown-item" href="">Print hotel Voucher</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        </div>
+        <div class="clearfix"></div>
+    </header>
+    <!--end header-->
+    <section class="cancel-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-xl-4 col-md-4">
+                    <h2>Change Flight</h2>
+                </div>
+                <div class="col-lg-8 col-xl-8 col-md-8">
+                    <div class="input-group marbt">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Find Cities,Countries & Place">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-xl-3 col-md-4 col-12 Cancel-section">
+                <p class="border-one"><span><i class="fa fa-suitcase" aria-hidden="true"></i>Trips</span>
+                    <span class="float-right"><i class="fa fa-lock" aria-hidden="true"></i></span></p>
+                <p class="border-one"><span><i class="fa fa-heart" aria-hidden="true"></i>Shortlists</span>
+                    <span class="float-right"><i class="fa fa-lock" aria-hidden="true"></i></span></p>
+                <p class="border-one"><span><i class="fa fa-users" aria-hidden="true"></i>Travellers</span>
+                    <span class="float-right"><i class="fa fa-lock" aria-hidden="true"></i></span></p>
+                <p class="border-one"><span><i class="fa fa-arrow-circle-up" aria-hidden="true"></i>Expressway</span>
+                    <span class="float-right"><i class="fa fa-lock" aria-hidden="true"></i></span></p>
+                <p class="border-one"><span><i class="fa fa-user" aria-hidden="true"></i>Trips</span>
+                    <span class="float-right"><i class="fa fa-lock" aria-hidden="true"></i></span></p>
+                <p class="border-one"><span><i class="fa fa-cog" aria-hidden="true"></i>Trips</span>
+                    <span class="float-right"><i class="fa fa-lock" aria-hidden="true"></i></span>
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-8 cancel-section-one">
+                <h4>Help us find your trip</h4>
+                <p class="pt-4 pb-2">Please provide your Email ID & Trip ID to proceed</p>
+                <form>
+                    <div class="form-group">
+                        <label>Email Id</label>
+                        <input type="text" class="form-control" id="emailId" placeholder="Enter Id" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Trip Id</label>
+                        <input type="text" class="form-control" id="tripId" placeholder="Trip Id" name="pswd" required>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember" required> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Continue</button>
+                    <div class="container cancelTrip">
+                        <p>Already have a Cleartrip Account?</p>
+                        <a href="">Sign in to manage your trips</a><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-12 online-cancel">
+                <h4 class="pt-4 pb-4">Cleartrip Account benefits</h4>
+                <div class="row">
+                    <div class="col-lg-3 col-xl-3 col-md-3 online-cancel">
+                        <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-lg-9 col-xl-9 col-md-9 online-cancel">
+                        <h5>Online Cancellations</h5>
+                        <p>Cancel or re-schedule your trips effortlessly in a few easy steps</p>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-md-3 online-cancel">
+                        <i class="fa fa-suitcase" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-lg-9 col-xl-9 col-md-9 online-cancel">
+                        <h5>Review & share trip information</h5>
+                        <p>Print invoices & tickets. Email or SMS booking details to fellow travellers</p>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-md-3 online-cancel">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-lg-9 col-xl-9 col-md-9 online-cancel">
+                        <h5>Expressway</h5>
+                        <p>Store your cards for 1-click bookings. It's safe & blazing fast</p>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-md-3 online-cancel">
+                        <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-lg-9 col-xl-9 col-md-9 online-cancel">
+                        <h5>Save travellers</h5>
+                        <p>Save travellers that you often book for, so you never have to type it again</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Get a Cleartrip Account</h4>
+                    <button type="button" class="close" data-dismiss="modal" ><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <button type="button" class="registerfb" onclick="window.location.href = 'https://www.facebook.com/';"><i class="fa fa-facebook" aria-hidden="true"></i>Sign up with Facebook</button>
+
+                    <form>
+                        <div class="container">
+                            <p>or, Sign up with your current email address</p>
+                            <hr>
+                            <label><b>Email</b></label>
+                            <input type="email" class="textBox" placeholder="Enter Email" name="email" required>
+
+                            <label><b>Password</b></label>
+                            <input type="password" class="textBox" placeholder="Enter Password" name="psw" required>
+
+                            <label><b>Repeat Password</b></label>
+                            <input type="password" class="textBox" placeholder="Repeat Password" name="psw-repeat" required>
+                            <hr>
+                            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                            <button type="submit" class="registerbtn">Create Account</button>
+                        </div>
+
+                        <div class="container signin">
+                            <p>Already have an account? <a href="#">Sign in</a>.</p>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Sign in to Cleartrip</h4>
+                    <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <button type="button" class="registerfb">
+                    <i class="fa fa-facebook" aria-hidden="true">
+                    </i>Sign in with Facebook</button>
+                    <form>
+                        <div class="container">
+                            <p>or Log in with your Cleartrip account</p>
+                            <hr>
+                            <label><b>Email</b></label>
+                            <input type="email" class="textBox" placeholder="Enter Email" name="email" required>
+
+                            <label><b>Password</b></label>
+                            <input type="password" class="textBox" placeholder="Enter Password" name="psw" required>
+
+                            <hr>
+                            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                            <button type="submit" class="registerbtn">Sign in</button>
+                        </div>
+                        <div class="container signin">
+                            <p>Don’t have a Cleartrip Account? <a href="">Sign Up</a>.</p>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--start footer-->
+    <footer class="page-footer font-small mdb-color pt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 col-12">
+                    <div class="text-center text-md-left">
+                        <!--Copyright-->
+                        <p class="text-md-left">© 2020 Copyright :
+                            <a href="http://travjury.com">
+                                <strong> Travel Agents</strong>
+                            </a>Powered By Travjury
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 foot-social">
+                    connect
+                    <a class="social-footer" href="https://www.facebook.com/travjurys" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="social-footer" href="https://twitter.com/travjuryS" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="social-footer" href="https://www.linkedin.com/company/travjury-software-pvt-ltd" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a class="social-footer" href="https://in.pinterest.com/travjurysoftware/?autologin=true" target="_blank">
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End footer-->
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="calenplugin/js/moment.min.js"></script>
+    <script src="calenplugin/js/daterangepicker.min.js"></script>
+    <script src="calenplugin/js/select.js"></script>
+</body>
+</html>

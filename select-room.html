@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>welcome to Travel Agents</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/inner/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="calenplugin/css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--start Header-->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"> 
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a href="index.html" class="navbar-brand font-weight-bold wow fadeInDown">
+                            <h2>
+                             Travel Agents
+                            </h2>
+                        </a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsenavbar">
+                            <i class="fa fa-align-justify"></i>
+                        </button>
+                        <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+                            <ul class="navbar-nav ml-auto ">
+                                <li class="nav-item dropdown nav-left">
+                                    <div class="wow fadeInDown" data-wow-delay="70ms">
+                                        <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                                        Currency <span class="inr">INR</span><img src="assets/images/inner/rupees.png" class="curr-img" alt="rupees">
+                                          </a >
+                                          <div class="dropdown-menu">
+                                          <a class="dropdown-item" href=""><span class="inr">Australian Dollar</span><img src="assets/images/inner/dollar.png" class="curr1-img" alt="dollar">
+                                          </a>
+                                        <a class="dropdown-item" href=""><span class="inr">Canadian Dollar</span><img src="assets/images/inner/dollar.png" class="curr1-img" alt="rupees"></a>
+                                        <a class="dropdown-item" href=""><span class="inr">Hong Kong Dollar</span><img src="assets/images/inner/dollar.png" class="curr1-img" alt="rupees"></a>
+                                        <a class="dropdown-item" href=""><span class="inr">Euro</span><img src="assets/images/inner/euro.png" class="curr1-img" alt="rupees"></a>
+                                        <a class="dropdown-item" href=""><span class="inr">Malaysian Ringgit M</span><img src="assets/images/inner/dollar.png" class="curr1-img" alt="rupees"></a>
+                                        <a class="dropdown-item" href=""><span class="inr">Pakistan Rs</span></a>
+                                        <a class="dropdown-item" href=""><span class="inr">US Dollar</span><img src="assets/images/inner/dollar.png" class="curr1-img" alt="rupees">
+                                        </a>
+                                    </div>
+                             </div>
+                        </li>
+                        <li class="nav-item dropdown nav-left">
+                            <div class="wow fadeInDown nav-img" data-wow-delay="70ms">
+                                <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                                    <img src="assets/images/inner/flag.png" alt="flat">
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="">UAE</a>
+                                    <a class="dropdown-item" href="">OMAN</a>
+                                    <a class="dropdown-item" href="">QATAR</a>
+                                    <a class="dropdown-item" href="">Bahrain</a>
+                                    <a class="dropdown-item" href="">Kuwait</a>
+                                    <a class="dropdown-item" href="">Saudi Arabia</a>
+                                    <a class="dropdown-item" href="">Middle East</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown nav-left">
+                            <div class="wow fadeInDown nav-img trip" data-wow-delay="70ms">
+                                <a href="index.html" class="nav-link dropdown-toggle scroll active" data-toggle="dropdown">
+                                    <img src="assets/images/inner/user.png" alt="user">Your Trips
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="" class="btn-register" data-toggle="modal" data-target="#myModal3">Sign In</a>
+                                    <br>
+                                    <a href="" class="btn-register" data-toggle="modal" data-target="#myModa4">Now Here ? Register</a>
+                                    <a class="dropdown-item" href="">Quick Tools</a>
+                                    <a class="dropdown-item" href="cancellation.html">Cancellations</a>
+                                    <a class="dropdown-item" href="change-flight.html">Change Flights</a>
+                                    <a class="dropdown-item" href="">Check PNR Status</a>
+                                    <a class="dropdown-item" href="">Print ticket</a>
+                                    <a class="dropdown-item" href="">Print hotel Voucher</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    </header>
+    <section id="section-hotel">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-xl-4 col-md-12 col-12 butonDiv">
+                    <button type="button" class="hotel-toggle"><i class="fa fa-play" aria-hidden="true"></i> Modify Search</button>
+                    <div class="row hiddenDiv-one" style="display: none;">
+                        <form id="hotelForm">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12 col-xl-12 col-12">
+                                             <label>Where*</label>
+                                            <div class="form-group">
+                                               <input type="text" placeholder="Enter Locality, Landmark, City or Hotel" id="selectCity" name="selectCity" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                                            <div class="form-group">
+                                                <label>Check In*</label>
+                                                <div class="input-group margin-bottom-sm">
+                                                    <input type="text" value="10/24/1984" id="picker6" name="picker" class="form-control" required>
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fa fa-calendar fa-fw"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                                            <div class="form-group">
+                                                <label>Check Out*</label>
+                                                <div class="input-group margin-bottom-sm">
+                                                    <input type="text" value="10/24/1984" id="picker7" name="picker" class="form-control" required>
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fa fa-calendar fa-fw"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label>Travellers</label>
+                                                <select id="travelRoom" name="travelRoom" class="custom-select form-control">
+                                                    <option value="">Select</option>
+                                                    <option value="1">1 Room, 1 Adults</option>
+                                                    <option value="2">1 Room, 2 Adults</option>
+                                                    <option value="3">2 Room, 4 Adults</option>
+                                                    <option value="4">2 Room, 8 Adults</option>
+                                                    <option value="5">More Travellers</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="buttonDiv float-right">
+                                        <input type="submit" name="submit" value="Search Hotels" class="submitButton">
+                                    </div>
+                                </form>
+                           </div>
+                      </div>
+                <div class="col-lg-8 col-md-8 col-12 hotelName">
+                    <h3>The Chancery Pavilion - Bengalore(10 Nights)</h3>
+                    <p>Tue, 11 Feb - Fri, 21 Feb | 1 room, 2 adults</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section-->
+    <div class="container">
+        <section id="box-shadow-hotel">
+            <div class="container">
+                <div class="row hotelDiv">
+                    <div class="col-lg-6 col-md-6 col-6 col-12">
+                        <a href=""><i class="fa fa-long-arrow-left" aria-hidden="true"></i>All hotels in Bangalore</a>
+                        <h2>The Chancery Pavilion</h2>
+                        <span>Residency Road, Bangalore</span>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-xl-3 col-12 fivestar">
+                                <div>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <span>5 Star</span>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-xl-9 col-12 tripDiv">
+                                <div><img src="assets/images/inner/trip.png" alt="hotelselect"></div>
+                                <span>1918 reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-6 col-12 shortlist text-right">
+                        <span class="short-bold">₹ 6,40,640</span>
+                        <span class="short-btn"><i class="fa fa-heart-o" aria-hidden="true"></i> Shortlist</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-xl-8 col-12 hotel-menu">
+                        <a href="#section2">Room & Rates</a>
+                        <a href="#section3">Amenties & Review</a>
+                        <a href="" data-toggle="modal" data-target="#myModal">Photos </a>
+                        <a href="" data-toggle="modal" data-target="#myModal1">Map</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-4 col-12 text-right booked">
+                        <span><i class="fa fa-clock-o" aria-hidden="true"></i>Booked 13 hours ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row hotel-banner">
+                    <div class="col-12 ">
+                        <img src="assets/images/select/hotel1.jpg" alt="hotelselect">
+                        <img src="assets/images/select/hotel3.jpg" alt="hotelselect">
+                        <a href="" data-toggle="modal" data-target="#myModal2"><img src="assets/images/select/hotel4.jpg" alt="hotelselect"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row highlightDiv">
+                    <div class="col-lg-4 col-md-4 col-4 col-12">
+                        <h3>Highlights of the property</h3>
+                        <ul>
+                            <li>Try the Vineyard Sunday Brunch by the pool-side with live counters</li>
+                            <li>Entire floor dedicate to women travellers with unique amenities</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-4 col-12">
+                        <h3>Tagged as</h3>
+                        <div>
+                            <span>Good nightlife nearby</span>
+                            <span>Popular attractions nearby</span>
+                        </div>
+                        <div>
+                            <span>24-hour room service</span>
+                            <span>Couple friendly</span></div>
+                        <div>
+                            <span>24-hour fitness centre</span>
+                            <span>Early check-in | late check-out</span>
+                        </div>
+                        <div> <span>Express check-in | check-out</span>
+                            <span>Concierge</span>
+                        </div>
+                        <div>
+                            <span>Business centre</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-4 col-12 direction">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.363317780233!2d77.70006681430642!3d13.202491713343115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1d00277e6751%3A0x8ee5d6bdcf837e0a!2sBangalore%20International%20Airport%20Pvt%20LTD.!5e0!3m2!1sen!2sin!4v1580803890075!5m2!1sen!2sin" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="section2">
+                <div class="row room-tab">
+                    <div class="col-12">
+                        <div class="room-tab-inner">
+                            <span class="text-left">Rooms & Rates</span>
+                            <ul class="nav nav-tabs float-right" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#home">1 Rooms, 2 Adults</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#menu1">1 Rooms, 1 Adults</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#menu2">2 Rooms, 4 Adults</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#menu3">1 Rooms, 3 Adults</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div id="home" class="container tab-pane active">
+                                <div class="row room-bottom-border">
+                                    <div class="col-lg-4 col-md-12 col-xl-4 col-12 tab-banner">
+                                        <h2>Superior Room</h2>
+                                        <span><i class="fa fa-bed" aria-hidden="true"></i>King Bed</span>
+                                        <span><i class="fa fa-area-chart" aria-hidden="true"></i>340sq ft</span>
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i>City View</span>
+                                        <div class="banner1">
+                                            <div id="hambet-banner" class="carousel slide" data-ride="carousel" data-interval="9000">
+                                                <!-- Indicators -->
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#hambet-banner" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#hambet-banner" data-slide-to="1"></li>
+                                                    <li data-target="#hambet-banner" data-slide-to="2"></li>
+                                                </ul>
+                                                <!-- The slideshow -->
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/select/suproom.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/suproom1.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/suproom2.jpg" alt="Single Room" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-xl-2 col-12 facilityDiv">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Air Conditioning</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Intercom</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Internet</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Iron/Ironing Board</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Luggage Rack</div>
+                                        <div id="clickMore1" class="clickMore">
+                                            <h6>+25 More</h6></div>
+                                        <div id="hiddenFac1" style="display: none;">
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Newspaper</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Television</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Wardrobe</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dental Kit</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Hair Dryer</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Western Toilet Seat</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Mineral Water</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Room Service</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Housekeeping</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dustbin</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-8 col-xl-6 col-12 deal-inner ">
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <span><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</span>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 Refundable">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <div class="hoPrice">₹ 6,40,640</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                        </div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-cutlery" aria-hidden="true"></i>Breakfast</p>
+                                                <p><i class="fa fa-bed" aria-hidden="true"></i>Complimentary stay for children under 5 without extra bed</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <div class="hoPrice">₹ 6,89,920</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row room-bottom-border">
+                                    <div class="col-lg-4 col-md-12 col-xl-4 col-12 tab-banner">
+                                        <h2>Deluxe Room</h2>
+                                        <span><i class="fa fa-bed" aria-hidden="true"></i>King Bed</span>
+                                        <span><i class="fa fa-area-chart" aria-hidden="true"></i>340sq ft</span>
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i>City View</span>
+                                        <div class="banner1">
+                                            <div id="deluxe-banner" class="carousel slide" data-ride="carousel" data-interval="9000">
+                                                <!-- Indicators -->
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#deluxe-banner" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#deluxe-banner" data-slide-to="1"></li>
+                                                    <li data-target="#deluxe-banner" data-slide-to="2"></li>
+                                                </ul>
+                                                <!-- The slideshow -->
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/select/delroom.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/delroom1.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/delroom2.jpg" alt="Single Room" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-xl-2 col-12 facilityDiv">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Air Conditioning</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Intercom</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Internet</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Iron/Ironing Board</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Luggage Rack</div>
+                                        <div id="clickMore2" class="clickMore">
+                                            <h6>+25 More</h6></div>
+                                        <div id="hiddenFac2" style="display: none;">
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Newspaper</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Television</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Wardrobe</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dental Kit</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Hair Dryer</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Western Toilet Seat</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Mineral Water</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Room Service</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Housekeeping</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dustbin</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-8 col-xl-6 col-12 deal-inner ">
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-bed" aria-hidden="true"></i>Complimentary stay for children under 5 without extra bed</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <div class="hoPrice">₹ 7,38,080</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                        </div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-cutlery" aria-hidden="true"></i>Breakfast</p>
+                                                <p><i class="fa fa-bed" aria-hidden="true"></i>Complimentary stay for children under 5 without extra bed</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <div class="hoPrice">₹ 8,28,640</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row room-bottom-border">
+                                    <div class="col-lg-4 col-md-12 col-xl-4 col-12 tab-banner">
+                                        <h2>Executive Suite</h2>
+                                        <span><i class="fa fa-bed" aria-hidden="true"></i>King Bed</span>
+                                        <span><i class="fa fa-area-chart" aria-hidden="true"></i>340sq ft</span>
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i>City View</span>
+                                        <div class="banner1">
+                                            <div id="suite-banner" class="carousel slide" data-ride="carousel" data-interval="9000">
+                                                <!-- Indicators -->
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#suite-banner" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#suite-banner" data-slide-to="1"></li>
+                                                    <li data-target="#suite-banner" data-slide-to="2"></li>
+                                                </ul>
+                                                <!-- The slideshow -->
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/select/execroom.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/execroom1.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/execroom2.jpg" alt="Single Room" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-xl-2 col-12 facilityDiv">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Air Conditioning</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Intercom</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Internet</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Iron/Ironing Board</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Luggage Rack</div>
+                                        <div id="clickMore3" class="clickMore">
+                                            <h6>+25 More</h6></div>
+                                        <div id="hiddenFac3" style="display: none;">
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Newspaper</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Television</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Wardrobe</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dental Kit</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Hair Dryer</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Western Toilet Seat</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Mineral Water</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Room Service</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Housekeeping</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dustbin</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-8 col-xl-6 col-12 deal-inner ">
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <span><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</span>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner1">
+                                                <div class="hoPrice">₹ 14,01,840</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                        </div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-cutlery" aria-hidden="true"></i>Breakfast</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner1">
+                                                <div class="hoPrice">₹ 15,05,680</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu1" class="container tab-pane fade">
+                                <br>
+                                <div class="row room-bottom-border">
+                                    <div class="col-lg-4 col-md-12 col-xl-4 col-12 tab-banner">
+                                        <h2>Superior Room</h2>
+                                        <span><i class="fa fa-bed" aria-hidden="true"></i>King Bed</span>
+                                        <span><i class="fa fa-area-chart" aria-hidden="true"></i>340sq ft</span>
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i>City View</span>
+                                        <div class="banner1">
+                                            <div id="superior-banner" class="carousel slide" data-ride="carousel" data-interval="9000">
+                                                <!-- Indicators -->
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#superior-banner" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#superior-banner" data-slide-to="1"></li>
+                                                    <li data-target="#superior-banner" data-slide-to="2"></li>
+                                                </ul>
+                                                <!-- The slideshow -->
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/select/suproom.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/suproom1.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/suproom2.jpg" alt="Single Room" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-xl-2 col-12 facilityDiv">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Air Conditioning</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Intercom</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Internet</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Iron/Ironing Board</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Luggage Rack</div>
+                                        <div id="clickMore4" class="clickMore">
+                                            <h6>+25 More</h6></div>
+                                        <div id="hiddenFac4" style="display: none;">
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Newspaper</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Television</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Wardrobe</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dental Kit</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Hair Dryer</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Western Toilet Seat</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Mineral Water</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Room Service</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Housekeeping</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dustbin</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-8 col-xl-6 col-12 deal-inner ">
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <span><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</span>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <div class="hoPrice">₹ 67,200</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                        </div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-cutlery" aria-hidden="true"></i>Breakfast</p>
+                                                <p><i class="fa fa-bed" aria-hidden="true"></i>Complimentary stay for children under 5 without extra bed</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <div class="hoPrice">₹ 5,56,920</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row room-bottom-border">
+                                    <div class="col-lg-4 col-md-12 col-xl-4 col-12 tab-banner">
+                                        <h2>Deluxe Room</h2>
+                                        <span><i class="fa fa-bed" aria-hidden="true"></i>King Bed</span>
+                                        <span><i class="fa fa-area-chart" aria-hidden="true"></i>340sq ft</span>
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i>City View</span>
+                                        <div class="banner1">
+                                            <div id="deluxe-one-banner" class="carousel slide" data-ride="carousel" data-interval="9000">
+                                                <!-- Indicators -->
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#deluxe-one-banner" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#deluxe-one-banner" data-slide-to="1"></li>
+                                                    <li data-target="#deluxe-one-banner" data-slide-to="2"></li>
+                                                </ul>
+                                                <!-- The slideshow -->
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/select/delroom.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/delroom1.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/delroom2.jpg" alt="Single Room" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-xl-2 col-12 facilityDiv">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Air Conditioning</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Intercom</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Internet</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Iron/Ironing Board</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Luggage Rack</div>
+                                        <div id="clickMore5" class="clickMore">
+                                            <h6>+25 More</h6></div>
+                                        <div id="hiddenFac5" style="display: none;">
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Newspaper</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Television</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Wardrobe</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dental Kit</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Hair Dryer</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Western Toilet Seat</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Mineral Water</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Room Service</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Housekeeping</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dustbin</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-8 col-xl-6 col-12 deal-inner ">
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-bed" aria-hidden="true"></i>Complimentary stay for children under 5 without extra bed</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <div class="hoPrice">₹ 6,76,080</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                        </div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-cutlery" aria-hidden="true"></i>Breakfast</p>
+                                                <p><i class="fa fa-bed" aria-hidden="true"></i>Complimentary stay for children under 5 without extra bed</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <div class="hoPrice">₹ 7,21,620</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row room-bottom-border">
+                                    <div class="col-lg-4 col-md-12 col-xl-4 col-12 tab-banner">
+                                        <h2>Executive Suite</h2>
+                                        <span><i class="fa fa-bed" aria-hidden="true"></i>King Bed</span>
+                                        <span><i class="fa fa-area-chart" aria-hidden="true"></i>340sq ft</span>
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i>City View</span>
+                                        <div class="banner1">
+                                            <div id="suite-one-banner" class="carousel slide" data-ride="carousel" data-interval="9000">
+                                                <!-- Indicators -->
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#suite-one-banner" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#suite-one-banner" data-slide-to="1"></li>
+                                                    <li data-target="#suite-one-banner" data-slide-to="2"></li>
+                                                </ul>
+                                                <!-- The slideshow -->
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/select/execroom.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/execroom1.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/execroom2.jpg" alt="Single Room" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-xl-2 col-12 facilityDiv">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Air Conditioning</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Intercom</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Internet</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Iron/Ironing Board</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Luggage Rack</div>
+                                        <div id="clickMore6" class="clickMore">
+                                            <h6>+25 More</h6></div>
+                                        <div id="hiddenFac6" style="display: none;">
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Newspaper</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Television</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Wardrobe</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dental Kit</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Hair Dryer</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Western Toilet Seat</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Mineral Water</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Room Service</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Housekeeping</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dustbin</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-8 col-xl-6 col-12 deal-inner ">
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <span><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</span>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner1">
+                                                <span>₹ 12,01,720</span>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                        </div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-cutlery" aria-hidden="true"></i>Breakfast</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner1">
+                                                <div class="hoPrice">₹ 13,05,230</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu2" class="container tab-pane fade">
+                                <br>
+                                <div class="row room-bottom-border">
+                                    <div class="col-lg-4 col-md-12 col-xl-4 col-12 tab-banner">
+                                        <h2>Superior Room</h2>
+                                        <span><i class="fa fa-bed" aria-hidden="true"></i>King Bed</span>
+                                        <span><i class="fa fa-area-chart" aria-hidden="true"></i>340sq ft</span>
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i>City View</span>
+                                        <div class="banner1">
+                                            <div id="superior-one-banner" class="carousel slide" data-ride="carousel" data-interval="9000">
+                                                <!-- Indicators -->
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#superior-one-banner" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#superior-one-banner" data-slide-to="1"></li>
+                                                    <li data-target="#superior-one-banner" data-slide-to="2"></li>
+                                                </ul>
+                                                <!-- The slideshow -->
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/select/suproom.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/suproom1.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/suproom2.jpg" alt="Single Room" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-xl-2 col-12 facilityDiv">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Air Conditioning</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Intercom</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Internet</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Iron/Ironing Board</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Luggage Rack</div>
+                                        <div id="clickMore7" class="clickMore">
+                                            <h6>+25 More</h6></div>
+                                        <div id="hiddenFac7" style="display: none;">
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Newspaper</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Television</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Wardrobe</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dental Kit</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Hair Dryer</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Western Toilet Seat</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Mineral Water</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Room Service</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Housekeeping</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dustbin</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-8 col-xl-6 col-12 deal-inner ">
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <span><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</span>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <div class="hoPrice">₹ 8,40,640</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                        </div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-cutlery" aria-hidden="true"></i>Breakfast</p>
+                                                <p><i class="fa fa-bed" aria-hidden="true"></i>Complimentary stay for children under 5 without extra bed</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <div class="hoPrice">₹ 8,89,920</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row room-bottom-border">
+                                    <div class="col-lg-4 col-md-12 col-xl-4 col-12 tab-banner">
+                                        <h2>Deluxe Room</h2>
+                                        <span><i class="fa fa-bed" aria-hidden="true"></i>King Bed</span>
+                                        <span><i class="fa fa-area-chart" aria-hidden="true"></i>340sq ft</span>
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i>City View</span>
+                                        <div class="banner1">
+                                            <div id="deluxe-two-banner" class="carousel slide" data-ride="carousel" data-interval="9000">
+                                                <!-- Indicators -->
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#deluxe-two-banner" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#deluxe-two-banner" data-slide-to="1"></li>
+                                                    <li data-target="#deluxe-two-banner" data-slide-to="2"></li>
+                                                </ul>
+                                                <!-- The slideshow -->
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/select/delroom.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/delroom1.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/delroom2.jpg" alt="Single Room" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-xl-2 col-12 facilityDiv">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Air Conditioning</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Intercom</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Internet</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Iron/Ironing Board</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Luggage Rack</div>
+                                        <div id="clickMore8" class="clickMore">
+                                            <h6>+25 More</h6></div>
+                                        <div id="hiddenFac8" style="display: none;">
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Newspaper</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Television</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Wardrobe</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dental Kit</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Hair Dryer</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Western Toilet Seat</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Mineral Water</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Room Service</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Housekeeping</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dustbin</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-8 col-xl-6 col-12 deal-inner ">
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-bed" aria-hidden="true"></i>Complimentary stay for children under 5 without extra bed</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <span>₹ 9,38,080</span>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                        </div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-cutlery" aria-hidden="true"></i>Breakfast</p>
+                                                <p><i class="fa fa-bed" aria-hidden="true"></i>Complimentary stay for children under 5 without extra bed</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <div class="hoPrice">₹ 9,28,640</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row room-bottom-border">
+                                    <div class="col-lg-4 col-md-12 col-xl-4 col-12 tab-banner">
+                                        <h2>Executive Suite</h2>
+                                        <span><i class="fa fa-bed" aria-hidden="true"></i>King Bed</span>
+                                        <span><i class="fa fa-area-chart" aria-hidden="true"></i>340sq ft</span>
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i>City View</span>
+                                        <div class="banner1">
+                                            <div id="suite-two-banner" class="carousel slide" data-ride="carousel" data-interval="9000">
+                                                <!-- Indicators -->
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#suite-two-banner" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#suite-two-banner" data-slide-to="1"></li>
+                                                    <li data-target="#suite-two-banner" data-slide-to="2"></li>
+                                                </ul>
+                                                <!-- The slideshow -->
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/select/execroom.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/execroom1.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/execroom2.jpg" alt="Single Room" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-xl-2 col-12 facilityDiv">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Air Conditioning</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Intercom</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Internet</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Iron/Ironing Board</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Luggage Rack</div>
+                                        <div id="clickMore9" class="clickMore">
+                                            <h6>+25 More</h6></div>
+                                        <div id="hiddenFac9" style="display: none;">
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Newspaper</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Television</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Wardrobe</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dental Kit</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Hair Dryer</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Western Toilet Seat</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Mineral Water</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Room Service</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Housekeeping</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dustbin</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-8 col-xl-6 col-12 deal-inner ">
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <span><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</span>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner1">
+                                                <div class="hoPrice">₹ 15,01,840</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                        </div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-cutlery" aria-hidden="true"></i>Breakfast</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner1">
+                                                <div class="hoPrice">₹ 16,05,680</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu3" class="container tab-pane fade">
+                                <br>
+                                <div class="row room-bottom-border">
+                                    <div class="col-lg-4 col-md-12 col-xl-4 col-12 tab-banner">
+                                        <h2>Superior Room</h2>
+                                        <span><i class="fa fa-bed" aria-hidden="true"></i>King Bed</span>
+                                        <span><i class="fa fa-area-chart" aria-hidden="true"></i>340sq ft</span>
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i>City View</span>
+                                        <div class="banner1">
+                                            <div id="superior-two-banner" class="carousel slide" data-ride="carousel" data-interval="9000">
+                                                <!-- Indicators -->
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#superior-two-banner" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#superior-two-banner" data-slide-to="1"></li>
+                                                    <li data-target="#superior-two-banner" data-slide-to="2"></li>
+                                                </ul>
+                                                <!-- The slideshow -->
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/select/suproom.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/suproom1.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/suproom2.jpg" alt="Single Room" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-xl-2 col-12 facilityDiv">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Air Conditioning</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Intercom</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Internet</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Iron/Ironing Board</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Luggage Rack</div>
+                                        <div id="clickMore10" class="clickMore">
+                                            <h6>+25 More</h6></div>
+                                        <div id="hiddenFac10" style="display: none;">
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Newspaper</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Television</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Wardrobe</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dental Kit</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Hair Dryer</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Western Toilet Seat</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Mineral Water</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Room Service</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Housekeeping</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dustbin</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-8 col-xl-6 col-12 deal-inner ">
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <span><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</span>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <div class="hoPrice">₹ 7,40,640</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                        </div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-cutlery" aria-hidden="true"></i>Breakfast</p>
+                                                <p><i class="fa fa-bed" aria-hidden="true"></i>Complimentary stay for children under 5 without extra bed</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <div class="hoPrice">₹ 7,89,920</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row room-bottom-border">
+                                    <div class="col-lg-4 col-md-12 col-xl-4 col-12 tab-banner">
+                                        <h2>Deluxe Room</h2>
+                                        <span><i class="fa fa-bed" aria-hidden="true"></i>King Bed</span>
+                                        <span><i class="fa fa-area-chart" aria-hidden="true"></i>340sq ft</span>
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i>City View</span>
+                                        <div class="banner1">
+                                            <div id="deluxe-three-banner" class="carousel slide" data-ride="carousel" data-interval="9000">
+                                                <!-- Indicators -->
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#deluxe-three-banner" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#deluxe-three-banner" data-slide-to="1"></li>
+                                                    <li data-target="#deluxe-three-banner" data-slide-to="2"></li>
+                                                </ul>
+                                                <!-- The slideshow -->
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/select/delroom.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/delroom1.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/delroom2.jpg" alt="Single Room" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-xl-2 col-12 facilityDiv">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Air Conditioning</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Intercom</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Internet</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Iron/Ironing Board</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Luggage Rack</div>
+                                        <div id="clickMore11" class="clickMore">
+                                            <h6>+25 More</h6></div>
+                                        <div id="hiddenFac11" style="display: none;">
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Newspaper</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Television</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Wardrobe</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dental Kit</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Hair Dryer</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Western Toilet Seat</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Mineral Water</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Room Service</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Housekeeping</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dustbin</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-8 col-xl-6 col-12 deal-inner ">
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-bed" aria-hidden="true"></i>Complimentary stay for children under 5 without extra bed</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 text-center ">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <div class="hoPrice">₹ 9,38,080</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                        </div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-cutlery" aria-hidden="true"></i>Breakfast</p>
+                                                <p><i class="fa fa-bed" aria-hidden="true"></i>Complimentary stay for children under 5 without extra bed</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner">
+                                                <div class="hoPrice">₹ 9,28,640</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row room-bottom-border">
+                                    <div class="col-lg-4 col-md-12 col-xl-4 col-12 tab-banner">
+                                        <h2>Executive Suite</h2>
+                                        <span><i class="fa fa-bed" aria-hidden="true"></i>King Bed</span>
+                                        <span><i class="fa fa-area-chart" aria-hidden="true"></i>340sq ft</span>
+                                        <span><i class="fa fa-eye" aria-hidden="true"></i>City View</span>
+                                        <div class="banner1">
+                                            <div id="suite-three-banner" class="carousel slide" data-ride="carousel" data-interval="9000">
+                                                <!-- Indicators -->
+                                                <ul class="carousel-indicators">
+                                                    <li data-target="#suite-three-banner" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#suite-three-banner" data-slide-to="1"></li>
+                                                    <li data-target="#suite-three-banner" data-slide-to="2"></li>
+                                                </ul>
+                                                <!-- The slideshow -->
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="assets/images/select/execroom.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/execroom1.jpg" alt="Single Room" />
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="assets/images/select/execroom2.jpg" alt="Single Room" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-xl-2 col-12 facilityDiv">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Air Conditioning</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Intercom</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Internet</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Iron/Ironing Board</div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i>Luggage Rack</div>
+                                        <div id="clickMore12" class="clickMore">
+                                            <h6>+25 More</h6></div>
+                                        <div id="hiddenFac12" style="display: none;">
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Newspaper</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Television</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Wardrobe</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dental Kit</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Hair Dryer</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Western Toilet Seat</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Mineral Water</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Room Service</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Housekeeping</div>
+                                            <div><i class="fa fa-check" aria-hidden="true"></i>Dustbin</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-8 col-xl-6 col-12 deal-inner ">
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <span><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</span>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner1">
+                                                <div class="hoPrice">₹ 16,01,840</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Get 10% Cashback upto Rs. 700. Use Coupon CT2020</div>
+                                        <div class="deal-border"><img src="assets/images/select/deal.png" alt="hotelselect">Avail upto 10% Cashback. Register on Cleartrip for work</div>
+                                        <div class="row deal-bottom">
+                                        </div>
+                                        <div class="row deal-bottom">
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <p><i class="fa fa-wifi" aria-hidden="true"></i>Free Wifi</p>
+                                                <p><i class="fa fa-cutlery" aria-hidden="true"></i>Breakfast</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                                                <a href="" title="Free Cancellation till Wednesday | If you Cancel within 24 houe Before Checkin,You will be Charged 1room night charges per room.">Refundable</a>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 book-inner1">
+                                                <div class="hoPrice">₹ 18,05,680</div>
+                                                <button class="boot-but" onclick="window.location.href = 'hotel-booking.html';">book</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="section3">
+                <div class="row">
+                    <div class="col-12 amenitiesDiv">
+                        <span>Amenities & Info</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-xl-4 col-12 about-hotel">
+                        <img src="assets/images/select/dining.jpg" alt="hotelselect">
+                        <img src="assets/images/select/bar.jpg" alt="hotelselect">
+                        <img src="assets/images/select/banquet.jpeg" alt="hotelselect">
+                        <img src="assets/images/select/spa.jpg" alt="hotelselect">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-xl-8 col-12 hotel-info">
+                        <h3>About the Hotel</h3>
+                        <p>Techno gymnasium, 20,000 sq. feet of conferencing space, 225 elegantly styled rooms and much more are on offer at The Chancery Pavilion. This ultra-modern 5-star hotel is a reflection of the cosmopolitan nature of Bengaluru. Cobbled entrance, a lavish lobby, luxury accommodation and state-of-the-art conference and banquet space are on offer at this upscale hotel.</p>
+                        <p>
+                            It's a treat for foodies at Chancery Pavilion from a Gourmet food served at Ithaca (all day dining) to keep your spirits high at Amnesia uber-chic lounge bar). Along with a bottle of vintage wine, grab a table to enjoy the midnight buffet under the starlit sky.</p>
+                        <div class="row">
+                            <div class="col-12 room-title">
+                                <h3>Quick facts</h3>
+                            </div>
+                        </div>
+                        <div class="row quick-fact">
+                            <div class="col-lg-2 col-md-2 col-xl-2 col-6">
+                                <h2>2 PM</h2>
+                                <span>Check-in</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-xl-2 col-6">
+                                <h2>12 PM</h2>
+                                <span>Check-out</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-xl-2 col-6">
+                                <h2>225</h2>
+                                <span>Rooms</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xl-6 col-6">
+                                <h2>8</h2>
+                                <span>Floors</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 room-title">
+                                <h3>General</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>24 Hour Front Desk</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Doctor on Call</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Housekeeping</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Telephone Service</div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>24 Hour Security</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Doorman</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Internet</div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Air Conditioning</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Elevator</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Laundry</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 room-title">
+                                <h3>Food & Beverage</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>24 Hour Room Service</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Coffee Shop</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Room Service</div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Banquet Hall</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Lounge</div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Bar</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Restaurant</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 room-title">
+                                <h3>Business Services</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Audio Visual Equipment</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Conference Hall</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Meeting Room</div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Board Room</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Fax</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Photocopy</div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Business Centre</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>LCD/Projector</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 room-title">
+                                <h3>Front Desk Services</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Concierge</div>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-xl-8 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Currency Exchange</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 room-title">
+                                <h3>Travel</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Parking</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Travel Desk</div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Pick & Drop</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Valet Parking</div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Porter</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 room-title">
+                                <h3>Recreation</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Fitness Centre</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Massage Centre</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Swimming Pool</div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Gift Shop</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Pool/Snooker Table</div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Jacuzzi</div>
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Spa</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 room-title">
+                                <h3>Kids</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Babysitting</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 room-title">
+                                <h3>Smoking Policy</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xl-4 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Smoking Floors</div>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-xl-8 col-12 facilityDiv1">
+                                <div><i class="fa fa-check" aria-hidden="true"></i>Smoking Rooms</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--start footer-->
+    <footer class="page-footer font-small mdb-color pt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 col-12">
+                    <!--Copyright-->
+                    <p class="text-md-left">© 2020 Copyright :
+                        <a href="http://travjury.com">
+                            <strong> Travel Agents</strong>
+                        </a>Powered By Travjury
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 foot-social">
+                    connect
+                    <a class="social-footer" href="https://www.facebook.com/travjurys" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="social-footer" href="https://twitter.com/travjuryS" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="social-footer" href="https://www.linkedin.com/company/travjury-software-pvt-ltd" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a class="social-footer" href="https://in.pinterest.com/travjurysoftware/?autologin=true" target="_blank">
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">The Chancery Pavilion - Bengalore(10 Nights)</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div id="hotel-photo" class="carousel slide" data-ride="carousel">
+                       <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#hotel-photo" data-slide-to="0" class="active"></li>
+                            <li data-target="#hotel-photo" data-slide-to="1"></li>
+                            <li data-target="#hotel-photo" data-slide-to="2"></li>
+                        </ul>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/select/hotel1.jpg" alt="Los Angeles">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/select/hotel1.jpg" alt="Chicago">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/select/hotel1.jpg" alt="New York">
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">The Chancery Pavilion - Location</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body modal-loc">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.091909949511!2d77.59648391430436!3d12.96597031851123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15d7b63cf2eb%3A0x8f7b9a58eea12c1b!2sThe%20Chancery%20Pavilion!5e0!3m2!1sen!2sin!4v1580816651760!5m2!1sen!2sin" allowfullscreen=""></iframe>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">The Chancery Pavilion - Bengalore(10 Nights)</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div id="hotel-one-photo" class="carousel slide" data-ride="carousel">
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/select/hotel1.jpg" alt="Los Angeles">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/select/hotel1.jpg" alt="Chicago">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/select/hotel1.jpg" alt="New York">
+                            </div>
+                        </div>
+                       <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Get a Cleartrip Account</h4>
+                    <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <button type="button" class="registerfb" onclick="window.location.href = 'https://www.facebook.com/';"><i class="fa fa-facebook" aria-hidden="true"></i>Sign up with Facebook</button>
+
+                    <form>
+                        <div class="container">
+                            <p>or, Sign up with your current email address</p>
+                            <hr>
+                            <label><b>Email</b></label>
+                            <input type="email" class="textBox" placeholder="Enter Email" name="email" required>
+
+                            <label><b>Password</b></label>
+                            <input type="password" class="textBox" placeholder="Enter Password" name="psw" required>
+
+                            <label><b>Repeat Password</b></label>
+                            <input type="password" class="textBox" placeholder="Repeat Password" name="psw-repeat" required>
+                            <hr>
+                            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                            <button type="submit" class="registerbtn">Create Account</button>
+                        </div>
+
+                        <div class="container signin">
+                            <p>Already have an account? <a href="#">Sign in</a>.</p>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Sign in to Cleartrip</h4>
+                    <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <button type="button" class="registerfb"><i class="fa fa-facebook" aria-hidden="true">
+                   </i>Sign in with Facebook</button>
+                    <form>
+                        <div class="container">
+                            <p>or Log in with your Cleartrip account</p>
+                            <hr>
+                            <label><b>Email</b></label>
+                            <input type="email" class="textBox" placeholder="Enter Email" name="email" required>
+                            <label><b>Password</b></label>
+                            <input type="password" class="textBox" placeholder="Enter Password" name="psw" required>
+                            <hr>
+                            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                            <button type="submit" class="registerbtn">Sign in</button>
+                        </div>
+                        <div class="container signin">
+                            <p>Don’t have a Cleartrip Account? <a href="">Sign Up</a>.</p>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End footer-->
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script  src="assets/js/countries.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/validate.js"></script>
+    <script src="assets/js/custom-dynamic.js"></script>
+    <script src="assets/js/selectone.js"></script>
+    <script src="calenplugin/js/moment.min.js"></script>
+    <script src="calenplugin/js/daterangepicker.min.js"></script>
+    <script src="calenplugin/js/select.js"></script>
+</body>
+</html>
